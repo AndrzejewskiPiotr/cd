@@ -4,8 +4,9 @@
   "description": "React component for working with digital microscoping slides.",
   "author": "CI TASK",
   "repository": "CI TASK/slide-workbench",
-  "main": "dist/index.js",
   "module": "dist/index.es.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "jsnext:main": "dist/index.es.js",
   "engines": {
     "node": ">=8",
