@@ -23,7 +23,10 @@ export default {
     url(),
     svgr(),
     resolve(),
-    typescript(),
+    typescript({
+      rollupCommonJSResolveHack: true,
+      clean: true
+    }),
     commonjs()
   ]
 }
