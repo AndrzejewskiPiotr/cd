@@ -20,7 +20,7 @@ function SlideWorkBench({ url }: { url:string }) {
         <React.Fragment>
             { isError && !isDataReceived ?
                 null :
-                    <div id='map-container' ref={container}/>
+                    <div style={{width: "600px", height: "600px"}} id='map-container' ref={container}/>
             }
         </React.Fragment>
     )
