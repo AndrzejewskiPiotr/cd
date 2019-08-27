@@ -1,6 +1,6 @@
 import * as L from 'leaflet';
 import IIIF from '../utility/iiif'
-
+import 'leaflet/dist/leaflet.css';
 
 function ImageViewer( data: number[], url: string ): void {
     const [width, height, tileWidth, tileHeight, depth] = data;
