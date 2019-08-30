@@ -70,6 +70,7 @@ const CanvasLayer = L.GridLayer.extend({
     }
 
     if(url === null) url = `${this.url}/${regionParam}/${sizeParam}/0/default.jpg`;
+    //@ts-ignore
     this.loader.getSlide(zoom, tileX, tileY, url, (error, img) => {
       if(!error) {
         if(isCanvas) {
