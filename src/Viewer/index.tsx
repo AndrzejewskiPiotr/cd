@@ -14,6 +14,7 @@ function SlideWorkBench({ id }: { id:string }) {
   const { current: isContainerMounted } = container;
 
   if( isDataReceived && isContainerMounted ) {
+    console.log(url)
     ImageViewer(data,url)
   }
 
