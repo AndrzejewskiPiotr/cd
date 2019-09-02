@@ -14,7 +14,6 @@ async function fetchHandler(resource: string) {
         if (res.status >= 400) {
             throw new Error('Bad response from server');
         }
-        console.log(res.json());
         return res.json();
     }).then( response => {
         const { width , height, tiles: [{ width: tileWidth, height: tileHeight  }], sizes: { length: depth } }: ResponseData  = response;
