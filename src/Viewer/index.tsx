@@ -8,7 +8,7 @@ import './styles.css'
 function SlideWorkBench({ id }: { id:string }) {
   const url = `https://stg.medrepo.apl.task.gda.pl/iiif/${id}`;
   const container = useRef<HTMLInputElement>(null);
-  const [data, isError] = usePromise(fetchImageData(`${id}/info.json`), []);
+  const [data, isError] = usePromise(fetchImageData(`${url}/info.json`), []);
 
   const isDataReceived = data.length > 0;
   const { current: isContainerMounted } = container;
