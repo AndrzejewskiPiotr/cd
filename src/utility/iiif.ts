@@ -107,8 +107,7 @@ function IIIF(map, url, width, height, tileWidth, tileHeight, depth) {
   result.tileWidth = tileWidth;
   result.tileHeight = tileHeight;
   const base = new BasicSlideLoader();
-  const stack = new StackSlideLoader(base, 8);
-  result.loader = stack;
+  result.loader = new StackSlideLoader(base, 8);;
   result.addTo(map);
   map.setMaxZoom(2);
   map.setMinZoom(-depth);
