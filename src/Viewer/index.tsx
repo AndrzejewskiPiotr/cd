@@ -5,9 +5,10 @@ import { usePromise } from "../hook";
 import fetchImageData from "../api/api";
 import './styles.css'
 
-function SlideWorkBench({ url }: { url:string }) {
+function SlideWorkBench({ id }: { id:string }) {
+  const url = `https://stg.medrepo.apl.task.gda.pl/iiif/${id}`;
   const container = useRef<HTMLInputElement>(null);
-  const [data, isError] = usePromise(fetchImageData(`${url}/info.json`), []);
+  const [data, isError] = usePromise(fetchImageData(`${id}/info.json`), []);
 
   const isDataReceived = data.length > 0;
   const { current: isContainerMounted } = container;
