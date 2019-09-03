@@ -78,21 +78,27 @@ const CanvasLayer = L.GridLayer.extend({
     if (url === null)
       url = `${this.url}/${regionParam}/${sizeParam}/0/default.jpg`;
     //@ts-ignore
-    this.loader.getSlide(url, (error, img) => {
-      if (!error) {
-        if (isCanvas) {
-          //@ts-ignore
-          const ctx = tile.getContext('2d');
-          ctx.globalAlpha = 1;
-          ctx.drawImage(img, ...fragment, 0, 0, size.x, size.y);
-        } else {
-          //@ts-ignore
-          tile.src = img.src;
+    this.loader.getSlide(
+      url,
+      (error : any, img : any) => {
+        if (!error) {
+          if (isCanvas) {
+            //@ts-ignore
+            const ctx = tile.getContext('2d');
+            ctx.globalAlpha = 1;
+            ctx.drawImage(img, ...fragment, 0, 0, size.x, size.y);
+          } else {
+            //@ts-ignore
+            tile.src = img.src;
+          }
         }
-      }
-      //@ts-ignore
-      done(error, tile);
-    },zoom, tileX, tileY,);
+        //@ts-ignore
+        done(error, tile);
+      },
+      zoom,
+      tileX,
+      tileY
+    );
     return tile;
   }
 });

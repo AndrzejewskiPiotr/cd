@@ -3,9 +3,12 @@ import React, { useRef } from 'react';
 import ImageViewer from './viewer';
 import { usePromise } from '../hook';
 import fetchImageData from '../api/api';
+import 'leaflet/dist/leaflet.css';
+import 'leaflet.fullscreen/Control.FullScreen.css';
+import 'leaflet.fullscreen';
 import './styles.css';
 
-function SlideWorkBench({ id }: { id: string }) {
+function SlideWorkBench({ id, className }: { id: string; className?: string }) {
   const url = `/iiif/${id}`;
   const container = useRef<HTMLInputElement>(null);
   const [data, isError] = usePromise(fetchImageData(`${url}/info.json`), []);
@@ -19,7 +22,7 @@ function SlideWorkBench({ id }: { id: string }) {
   return (
     <React.Fragment>
       {isError && !isDataReceived ? null : (
-        <div id="map-container" ref={container} />
+        <div className={className} id="map-container" ref={container} />
       )}
     </React.Fragment>
   );
