@@ -16,7 +16,7 @@
     "test:watch": "react-scripts-ts test --env=jsdom",
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "prepare": "npm run build && ../node_modules/.bin/tsc",
+    "prepare": "npm run build && ./node_modules/.bin/tsc",
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build",
     "lint": "eslint src/**/*.ts src/**/*.tsx  --fix"
