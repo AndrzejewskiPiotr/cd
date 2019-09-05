@@ -3,7 +3,7 @@ node_modules
 # builds
 build
 .rpt2_cache
-
+dist
 # misc
 .DS_Store
 .env
