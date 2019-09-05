@@ -6,7 +6,13 @@ type ResponseData = {
 };
 
 async function fetchHandler(resource: string) {
-  return fetch(resource)
+  return fetch(resource, {
+    headers : {
+      'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    }
+
+  })
     .then(res => {
       if (res.status >= 400) {
         throw new Error('Bad response from server');
