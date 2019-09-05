@@ -80,7 +80,10 @@ const CanvasLayer = L.GridLayer.extend({
     //@ts-ignore
     this.loader.getSlide(
       url,
-      (error : any, img : any) => {
+      (
+        error: string | undefined,
+        img: HTMLCanvasElement | HTMLImageElement | null
+      ) => {
         if (!error) {
           if (isCanvas) {
             //@ts-ignore

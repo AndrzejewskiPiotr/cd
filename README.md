@@ -12,7 +12,7 @@ import SlideWorkBench from 'slide-workbench'
 
 function App() {
   return (
-    <SlideWorkBench text="dasdasd"/>
+    <SlideWorkBench id="your_id"/>
   );
 }
 
