@@ -116,6 +116,7 @@ function IIIF(map, url, width, height, tileWidth, tileHeight, depth) {
     minZoom: -depth,
     maxZoom: 2
   });
+  // @ts-ignore
   result.url = url;
   result.width = width;
   result.height = height;
