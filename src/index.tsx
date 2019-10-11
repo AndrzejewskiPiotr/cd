@@ -10,9 +10,9 @@ const store = createStore(rootReducer);
 
 
 
-const SlideWorkBench = (id : string) =>
+const SlideWorkBench = ({ id, className }: { id: string; className?: string }) =>
   <Provider store={store}>
-    <Slide id={id} />
+    <Slide id={id} className={className}/>
   </Provider>;
 
 export default SlideWorkBench;
