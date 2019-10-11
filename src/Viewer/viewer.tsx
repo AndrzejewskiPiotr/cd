@@ -3,8 +3,6 @@ import IIIF from '../utility/iiif';
 import 'leaflet-easybutton'
 import 'leaflet-draw/dist/leaflet.draw.css'
 import 'leaflet-draw'
-import 'leaflet-ellipse'
-import 'leaflet-draw-elipse/Leaflet.draw-ellipse'
 
 
 function ImageViewer(data: number[], url: string, handle: any): void {
