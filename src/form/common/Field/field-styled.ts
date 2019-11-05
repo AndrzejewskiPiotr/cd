@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   display: grid;
@@ -13,10 +13,10 @@ const Input = styled.input`
   font-size: 14px;
   letter-spacing: 0.17px;
   box-sizing: border-box;
-  
- &:focus {
-   outline: none;
- }
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 const Label = styled.label`
@@ -26,16 +26,9 @@ const Label = styled.label`
   text-align: left;
   color: #79818b;
   &:after {
-  content: '*';
-  color: #ff4949;
+    content: '*';
+    color: #ff4949;
   }
 `;
 
-
-export {
-    Input,
-    Wrapper,
-    Label,
-}
-
-
+export { Input, Wrapper, Label };

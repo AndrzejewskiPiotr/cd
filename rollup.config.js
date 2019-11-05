@@ -11,7 +11,7 @@ import pkg from './package.json';
 
 export default {
   input: 'src/index.tsx',
-  external: ['react', 'react-dom', 'prop-types', 'styled-components'],
+  external: ['react', 'react-dom', 'prop-types', 'styled-components', 'formik'],
   output: [
     {
       file: pkg.main,
