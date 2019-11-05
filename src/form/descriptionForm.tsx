@@ -5,7 +5,7 @@ import * as yup from 'yup';
 import CommonField from './common/Field/field';
 import { usePromise } from '../hook';
 import fetchDescription from '../api/description';
-import Wrapper from './descriptionForm-styled';
+import { Wrapper, Submit } from './descriptionForm-styled';
 
 export interface FormValues {
   classification: object;
@@ -57,7 +57,7 @@ function DescriptionForm() {
               label="Numer choroby"
               {...props}
             />
-            <button type="submit">Submit</button>
+            <Submit type="submit">Submit</Submit>
           </form>
         )}
       />
