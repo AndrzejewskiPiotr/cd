@@ -17,6 +17,9 @@ const Submit = styled.button`
   background-color: #13ce66;
   color: white;
   border: 0;
+    &:focus {
+    border: none;
+  }
 `
 
 export {

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="32ecfd8c-d220-4446-9f4f-17641fbbb932" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/form/descriptionForm-styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/form/descriptionForm-styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/descriptionForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/form/descriptionForm.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -72,19 +71,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/form/descriptionForm-styled.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="546">
+              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/form/descriptionForm.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="-754">
               <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
             </state>
           </provider>
@@ -139,8 +138,8 @@
         <option value="$PROJECT_DIR$/src/Viewer/styles.css" />
         <option value="$PROJECT_DIR$/src/Viewer/viewer-styled.ts" />
         <option value="$PROJECT_DIR$/src/Viewer/index.tsx" />
-        <option value="$PROJECT_DIR$/src/form/descriptionForm-styled.ts" />
         <option value="$PROJECT_DIR$/src/form/descriptionForm.tsx" />
+        <option value="$PROJECT_DIR$/src/form/descriptionForm-styled.ts" />
       </list>
     </option>
   </component>
@@ -245,7 +244,7 @@
       <workItem from="1570783707917" duration="1358000" />
       <workItem from="1570785081096" duration="6466000" />
       <workItem from="1572946928309" duration="1798000" />
-      <workItem from="1572950297601" duration="2596000" />
+      <workItem from="1572950297601" duration="3869000" />
     </task>
     <task id="LOCAL-00001" summary="sdd">
       <created>1566454344259</created>
@@ -265,7 +264,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70278000" />
+    <option name="totallyTimeSpent" value="71551000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="2493" height="1415" extended-state="6" />
@@ -451,13 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Viewer/viewer-styled.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Viewer/index.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -468,17 +460,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/form/descriptionForm-styled.ts">
+    <entry file="file://$PROJECT_DIR$/src/Viewer/viewer-styled.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="208">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/form/descriptionForm.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="-754">
           <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/form/descriptionForm-styled.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
         </state>
       </provider>
     </entry>
