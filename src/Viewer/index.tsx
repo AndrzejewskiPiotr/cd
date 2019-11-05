@@ -4,10 +4,11 @@ import DescriptionForm from '../form/descriptionForm';
 import ImageViewer from './viewer';
 import { usePromise } from '../hook';
 import fetchImageData from '../api/map';
+import Wrapper from './viewer-styled'
 import 'leaflet/dist/leaflet.css';
 import 'leaflet.fullscreen/Control.FullScreen.css';
 import 'leaflet.fullscreen';
-import './styles.css';
+
 
 function SlideWorkBench({ id, className }: { id: string; className?: string }) {
   const url = `/image/iiif/${id}`;
@@ -21,12 +22,12 @@ function SlideWorkBench({ id, className }: { id: string; className?: string }) {
   }
 
   return (
-    <div id="wrapper" className={className}>
+    <Wrapper {...className}>
       <DescriptionForm />
       {isError && !isDataReceived ? null : (
         <div id="map-container" ref={container} />
       )}
-    </div>
+    </Wrapper>
   );
 }
 
