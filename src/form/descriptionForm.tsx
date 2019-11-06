@@ -2,14 +2,13 @@ import React from 'react'
 import {
     Formik,
     FormikProps,
-    FormikValues,
-    FormikActions } from 'formik';
+    FormikValues} from 'formik';
 import * as yup from 'yup'
 
 
 import CommonField from './common/Field/field'
-import { usePromise } from "../slide/hook";
-import fetchDescription from "../slide/api/description";
+import { usePromise } from "../hook";
+import fetchDescription from "../api/description";
 import  {Wrapper, Submit}  from './descriptionForm-styled';
 import CommonSelect from "./common/Select/select";
 
@@ -56,7 +55,7 @@ function DescriptionForm() {
                 enableReinitialize={true}
                 onSubmit={(
                     values: FormikValues,
-                    actions: FormikActions<FormikValues>) => {
+                    actions: FormikValues) => {
                         alert(JSON.stringify(values, null, 2));
                         actions.setSubmitting(false);
                 }}

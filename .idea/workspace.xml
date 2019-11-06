@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32ecfd8c-d220-4446-9f4f-17641fbbb932" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/form/common/Select/select-styled.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/form/common/Select/select.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/form/common/SingleSelect/singleSelect-styled.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/form/common/SingleSelect/singleSelect.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/common/ErrorMessage/errorMessage-styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/form/common/ErrorMessage/errorMessage-styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/common/ErrorMessage/errorMessage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/form/common/ErrorMessage/errorMessage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/common/Field/field-styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/form/common/Field/field-styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/common/Field/field.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/form/common/Field/field.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/descriptionForm-styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/form/descriptionForm-styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/form/descriptionForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/form/descriptionForm.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -67,9 +60,49 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/form/common/Field/field.tsx">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-78">
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/form/common/Select/select.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/form/descriptionForm.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="609">
+              <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -115,14 +148,14 @@
         <option value="$PROJECT_DIR$/src/Viewer/viewer.tsx" />
         <option value="$PROJECT_DIR$/src/index.tsx" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/rollup.config.js" />
         <option value="$PROJECT_DIR$/src/Viewer/viewe-styled.ts" />
         <option value="$PROJECT_DIR$/src/Viewer/styles.css" />
         <option value="$PROJECT_DIR$/src/Viewer/viewer-styled.ts" />
         <option value="$PROJECT_DIR$/src/Viewer/index.tsx" />
-        <option value="$PROJECT_DIR$/src/form/descriptionForm.tsx" />
         <option value="$PROJECT_DIR$/src/form/descriptionForm-styled.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/form/descriptionForm.tsx" />
       </list>
     </option>
   </component>
@@ -169,6 +202,14 @@
               <item name="form" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="Field" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="Select" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cd" type="b2602c69:ProjectViewProjectNode" />
@@ -243,7 +284,7 @@
       <workItem from="1570783707917" duration="1358000" />
       <workItem from="1570785081096" duration="6466000" />
       <workItem from="1572946928309" duration="1798000" />
-      <workItem from="1572950297601" duration="5502000" />
+      <workItem from="1572950297601" duration="5914000" />
     </task>
     <task id="LOCAL-00001" summary="sdd">
       <created>1566454344259</created>
@@ -263,7 +304,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73184000" />
+    <option name="totallyTimeSpent" value="73596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="2493" height="1415" extended-state="6" />
@@ -389,13 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="32" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/api/map.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -483,15 +517,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/form/descriptionForm.tsx">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-969">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="609">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/form/common/Field/field.tsx">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-78">
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/form/common/Select/select.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/form/descriptionForm.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
