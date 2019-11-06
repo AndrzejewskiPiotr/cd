@@ -1,40 +1,35 @@
+
 type ResponseData = {
   slide_id: string;
   description: {
-    classification: {
-      standard: string;
-      code: string;
-    };
-  };
+    classification : {
+      standard: string
+      code: string
+    }
+  }
 };
 
-async function fetchHandler() {
-  return new Promise(resolve => {
+async function fetchHandler( ) {
+  return new Promise((resolve) => {
     setTimeout(function() {
       resolve({
-        slide_id: '131232112',
+        slide_id: "131232112",
         description: {
-          classification: {
-            standard: 'ICD-10',
-            code: 'A17'
+          classification : {
+            standard: "",
+            code: ""
           }
         }
       });
-    }, 300);
+    }, 30);
+  }).then((res: any ) => {
+    if (res.status >= 400) {
+      throw new Error('Bad response from server');
+    }
+    return res
   })
-    .then((res: any) => {
-      if (res.status >= 400) {
-        throw new Error('Bad response from server');
-      }
-      return res;
-    })
     .then(response => {
-      const {
-        slide_id,
-        description: {
-          classification: { standard, code }
-        }
-      }: ResponseData = response;
+      let { slide_id,description : { classification: { standard, code } } } : ResponseData = response;
       return [slide_id, standard, code];
     });
 }
