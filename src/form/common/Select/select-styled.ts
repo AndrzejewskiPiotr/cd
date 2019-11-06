@@ -2,24 +2,12 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   display: grid;
-`;
-
-const Input = styled.input`
-  height: 39px;
-  border-radius: 6px;
-  border: solid 1.5px #c0ccda;
-  background-color: #f5f8fa;
-  padding: 0 8px 0;
-  font-size: 16px;
-  letter-spacing: 0.17px;
-  box-sizing: border-box;
-  
- &:focus {
-   outline: none;
- }
- &::placeholder {
-  color: #1f2d3d
- }
+  :after {
+  width: 4px;
+  height: 8px;
+  border: solid 0.5px #1f2d3d;
+  background-color: #1f2d3d;
+}
 `;
 
 const Label = styled.label`
@@ -36,7 +24,6 @@ const Label = styled.label`
 
 
 export {
-    Input,
     Wrapper,
     Label,
 }
