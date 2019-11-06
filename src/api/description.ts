@@ -16,8 +16,8 @@ async function fetchHandler( ) {
         slide_id: "131232112",
         description: {
           classification : {
-            standard: "",
-            code: ""
+            standard: "ICD-10",
+            code: "A33"
           }
         }
       });
