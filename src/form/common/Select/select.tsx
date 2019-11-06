@@ -43,6 +43,7 @@ function CommonSelect({setFieldValue,name,setFieldTouched,values,fieldName,label
     const handleBlur = () => {
         setFieldTouched(fieldName, true)
     }
+    console.log("def :",defaultValue(),"values :",values)
 
     return (
                 <Wrapper>
