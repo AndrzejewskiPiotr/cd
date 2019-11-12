@@ -39,6 +39,7 @@ function SingleSelect(props: any) {
         props.handleBlur(props.inputName, true);
     };
     const isError = !!getIn(props.errors, props.inputName) && !!getIn(props.touched, props.inputName);
+
     return (
         <Field name={props.inputName}>
             {({ field,form : { errors, touched }}: any) => (

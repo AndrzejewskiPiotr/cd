@@ -30,31 +30,29 @@ const options = [
 
 function CommonSelect({setFieldValue,name,setFieldTouched,values,fieldName,label,htmlFor,placeholder,errors,touched,...props}: FormikProps<FormikValues> &
     { name: string, fieldName: string, label: string, htmlFor:string, placeholder: string}) {
-    const [parent,child] = fieldName.split('.');
-    const value =  values[parent][child];
-    const defaultValue = () => {
-        const selectValueIndex = options.findIndex((option) => option.value === value)
-        return selectValueIndex !== -1 ? options[selectValueIndex] : []
-    }
-    const handleChange = (value: any) => {
-        setFieldValue(fieldName,value.value)
-    };
+  const [parent,child] = fieldName.split('.');
+  const value =  values[parent][child];
+  const defaultValue = () => {
+    const selectValueIndex = options.findIndex((option) => option.value === value)
+    return selectValueIndex !== -1 ? options[selectValueIndex] : []
+  }
+  const handleChange = (value: any) => {
+    setFieldValue(fieldName,value.value)
+  };
 
-    const handleBlur = () => {
-        setFieldTouched(fieldName, true)
-    }
-    console.log("def :",defaultValue(),"values :",values)
-
-    return (
+  const handleBlur = () => {
+    setFieldTouched(fieldName, true)
+  }
+  return (
                 <Wrapper>
                     <Label htmlFor={htmlFor}>{label}</Label>
                     <Select
                         styles={colourStyles}
-                        defaultValue={defaultValue()}
                         onChange={handleChange}
                         onBlur={handleBlur}
                         label={label}
                         options={options}
+                        value={defaultValue()}
                         placeholder={placeholder}
                         {...props}
                     />
