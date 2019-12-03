@@ -21,9 +21,9 @@ function SlideWorkBench({ id, className }: { id: string; className?: string }) {
   }
 
   return (
-    <Container {...className}>
+    <Container>
       {isError && !isDataReceived ? null : (
-        <Wrapper {...className} ref={containerRef}>
+        <Wrapper className={className} ref={containerRef}>
           <AnimatedForm />
         </Wrapper>
       )}
