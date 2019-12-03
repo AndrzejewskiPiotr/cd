@@ -35,8 +35,9 @@ function SingleSelect(props: any) {
         props.setFieldValue(props.inputName, value);
     };
 
-    const handleBlur = () => {
-        props.handleBlur(props.inputName, true);
+    const handleBlur = (e:any) => {
+      console.log(e)
+      setTimeout(props.handleBlur(props.inputName, true),3000);
     };
     const isError = !!getIn(props.errors, props.inputName) && !!getIn(props.touched, props.inputName);
 

@@ -1,9 +1,13 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-const Wrapper = styled.div`
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 1fr 3fr;
-`
+const Container = styled.div`
+  #map-container {
+    background-color: rgb(241, 243, 244);
+  }
+`;
 
-export default Wrapper
+const Wrapper = styled.div.attrs({
+  id: 'map-container'
+})``;
+
+export { Container, Wrapper };

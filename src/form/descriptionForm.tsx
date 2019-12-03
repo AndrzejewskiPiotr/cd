@@ -9,7 +9,7 @@ import * as yup from 'yup'
 import CommonField from './common/Field/field'
 import { usePromise } from "../hook";
 import fetchDescription from "../api/description";
-import  {Wrapper, Submit}  from './descriptionForm-styled';
+import { Wrapper, Submit }  from './descriptionForm-styled';
 import CommonSelect from "./common/Select/select";
 
 export interface FormValues {
