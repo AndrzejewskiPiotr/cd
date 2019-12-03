@@ -1,5 +1,8 @@
 import * as L from 'leaflet';
 import IIIF from '../utility/iiif';
+import 'leaflet-easybutton'
+import 'leaflet-draw'
+import 'leaflet-draw/dist/leaflet.draw.css'
 
 function ImageViewer(data: number[], url: string): void {
   const [width, height, tileWidth, tileHeight, depth] = data;
@@ -11,12 +14,15 @@ function ImageViewer(data: number[], url: string): void {
     crs: L.CRS.Simple,
     zoomControl:false,
   });
-  IIIF(mp, `${url}`, width, height, tileWidth, tileHeight, depth);
-  mp.setMaxBounds(
-    L.latLngBounds([[height * 0.1, -width * 0.1], [-height * 1.1, width * 1.1]])
-  );
-  mp.setView([-height / 2, width / 2], -7);
 
+  L.control.zoom({
+    position: 'topright'
+  }).addTo(mp);
+
+  IIIF(mp, `${url}`, width, height, tileWidth, tileHeight, depth);
+  mp.setView([-height / 2, width / 2], -6);
+  const editableLayers = new L.FeatureGroup();
+  mp.addLayer(editableLayers);
   L.control.zoom({
     position: 'topright'
   }).addTo(mp);
