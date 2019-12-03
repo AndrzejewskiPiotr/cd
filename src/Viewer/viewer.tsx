@@ -20,7 +20,7 @@ function ImageViewer(data: number[], url: string): void {
   L.control.zoom({
     position: 'topright'
   }).addTo(mp);
-  // @ts-ignore
+  //@ts-ignore
   mp.addControl(L.control.fullscreen({
     position: 'topright',
     title: 'Show me the fullscreen !',
