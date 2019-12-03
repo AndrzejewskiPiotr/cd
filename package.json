@@ -56,7 +56,7 @@
     "react-spring": "8.0.27",
     "@types/leaflet-draw": "^1.0.0",
     "leaflet-draw": "^1.0.4",
-    "leaflet-easybutton": "^2.4.0",
+    "leaflet-easybutton": "^2.4.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.1.0",
