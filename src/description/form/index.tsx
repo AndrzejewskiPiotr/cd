@@ -34,7 +34,7 @@ function AnimatedForm({ heading }: PAnimatedForm) {
     to: {
       display: open ? 'flex' : 'none',
       width: open ? `100%` : '10%',
-      height: open ? `30%` : '10%',
+      height: open ? `100%` : '10%',
       background: open ? 'white' : 'rgba(0, 0, 0, 0)'
     }
   });

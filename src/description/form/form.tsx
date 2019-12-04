@@ -23,7 +23,6 @@ const FormSchema = yup.object().shape({
     standard: yup.string().required('Pole jest wymagane !')
   })
 });
-
 function DescriptionForm({
   children,
   description,
