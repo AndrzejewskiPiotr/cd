@@ -1,52 +1,49 @@
-import { animated } from 'react-spring'
-import styled from 'styled-components'
+import { animated } from 'react-spring';
+import styled from 'styled-components';
 
 const OpenBtn = styled(animated.button)`
   position: relative;
   cursor: pointer;
   z-index: 99999999;
-  display:block;
+  display: block;
   border: 2px solid rgba(0, 0, 0, 0.2);
   background-color: white;
   color: black;
   margin: 10px;
   line-height: 30px;
-`
+`;
 
 const Container = styled(animated.form)`
   position: absolute;
   top: 10px;
   left: 10px;
   max-width: 600px;
+  width: 100%;
   max-height: 90%;
   flex-flow: column;
-  padding: 25px;
   display: none;
   background: transparent;
   box-shadow: none;
-  border-radius: 5px;
   will-change: width, height;
   z-index: 401;
-`
+  border-radius: 8px;
+  border: solid 1px #979797;
+`;
 
 const Item = styled(animated.div)`
-  position:relative;
+  position: relative;
   z-index: 2;
   width: 100%;
   will-change: transform, opacity;
-`
+`;
 
-const ExitBtn = styled.span`
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 404;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-`
+const Header = styled.div`
+  padding: 12px;
+  margin: 0 0 12px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #d3dce6;
+`;
 const Submit = styled.button`
   width: 96px;
   height: 32px;
@@ -55,13 +52,20 @@ const Submit = styled.button`
   background-color: #13ce66;
   color: white;
   border: 0;
-  cursor:pointer;
+  cursor: pointer;
   &:focus {
     outline: none;
   }
+`;
 
-`
+const Wrapper = styled.div``;
 
-const Wrapper = styled.div``
+const Heading = styled.span`
+  flex: 1;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.27px;
+  color: #1f2d3d;
+`;
 
-export { Container, Item, OpenBtn, ExitBtn, Wrapper, Submit }
+export { Container, Item, OpenBtn, Header, Wrapper, Submit, Heading };

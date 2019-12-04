@@ -1,13 +1,17 @@
 import * as React from 'react';
 import DescriptionForm from './form';
 import fetchDescription from '../../api/description';
-import { usePromise } from '../../hook';
+import { usePromise } from '../../hook/index';
 import { data, createElement } from './form-fields';
-import { OpenBtn, Wrapper, Item, ExitBtn } from './form-styled';
+import { OpenBtn, Wrapper, Item, Header, Heading } from './form-styled';
 import { config, useChain, useSpring, useTransition } from 'react-spring';
-import HighlightOffIcon from '@material-ui/icons/HighlightOff';
+import ExitSvg from '../../svg/exit/exit-svg';
 
-function AnimatedForm() {
+type PAnimatedForm = {
+  heading: string;
+};
+
+function AnimatedForm({ heading }: PAnimatedForm) {
   const openBtnRef: any = React.useRef(null);
   const containerRef: any = React.useRef(null);
   const transRef: any = React.useRef(null);
@@ -16,13 +20,20 @@ function AnimatedForm() {
   const handleToggleModal = () => {
     set(open => !open);
   };
-  const { size, background, display, ...rest }: any = useSpring({
+  // @ts-ignore
+  const { width, height, background, display, ...rest }: any = useSpring<any>({
     ref: containerRef,
     config: config.stiff,
-    from: { size: '10%', background: 'rgba(0, 0, 0, 0)', display: 'none' },
+    from: {
+      width: '10%',
+      heigh: '10%',
+      background: 'rgba(0, 0, 0, 0)',
+      display: 'none'
+    },
     to: {
       display: open ? 'flex' : 'none',
-      size: open ? `70%` : '10%',
+      width: open ? `100%` : '10%',
+      height: open ? `30%` : '10%',
       background: open ? 'white' : 'rgba(0, 0, 0, 0)'
     }
   });
@@ -52,7 +63,7 @@ function AnimatedForm() {
     open
       ? [openBtnRef, containerRef, transRef]
       : [transRef, containerRef, openBtnRef],
-    [0, open ? 0.1 : 0.6, open ? 0.1 : 0.6]
+    [0, open ? 0.1 : 0.5, open ? 0.1 : 0.5]
   );
 
   return (
@@ -61,19 +72,14 @@ function AnimatedForm() {
         Opis Medyczny
       </OpenBtn>
       <DescriptionForm
-        style={{
-          ...rest,
-          width: size,
-          height: size,
-          background: background,
-          display: display
-        }}
+        style={{ ...rest, width, height, background, display }}
         description={description}
         render={(formikProps: any) => (
           <>
-            <ExitBtn onClick={handleToggleModal}>
-              <HighlightOffIcon style={{ fontSize: 40, color: '#00406b' }} />
-            </ExitBtn>
+            <Header>
+              <Heading>{heading}</Heading>
+              <ExitSvg onClick={handleToggleModal} />
+            </Header>
             {transitions.map(({ item, key, animation }: any) => (
               <Item key={key} style={animation}>
                 {createElement(item.category, item, formikProps)}

@@ -1,9 +1,9 @@
 import React from 'react';
-import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
+import { makeStyles, createStyles } from '@material-ui/core/styles';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import { Label, Wrapper } from '../Select/select-styled';
+import { Label, Wrapper } from './radioButton-styled';
 import ErrorMessage from '../ErrorMessage/errorMessage';
 import { getIn } from 'formik';
 

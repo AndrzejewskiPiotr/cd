@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import Select from 'react-select';
 
 const Wrapper = styled.div`
   display: grid;
+  margin: 0 25px;
   :after {
     width: 4px;
     height: 8px;
@@ -10,8 +10,6 @@ const Wrapper = styled.div`
     background-color: #1f2d3d;
   }
 `;
-
-const StyledSelect = styled(Select)``;
 
 const Label = styled.label`
   margin: 5px;
@@ -25,4 +23,4 @@ const Label = styled.label`
   }
 `;
 
-export { Wrapper, Label, StyledSelect };
+export { Wrapper, Label };
