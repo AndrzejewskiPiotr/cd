@@ -53,6 +53,7 @@ const Submit = styled.button`
   color: white;
   border: 0;
   cursor: pointer;
+  margin: 0 25px;
   &:focus {
     outline: none;
   }
@@ -62,6 +63,7 @@ const Wrapper = styled.div``;
 
 const Heading = styled.span`
   flex: 1;
+  text-align: center;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.27px;
