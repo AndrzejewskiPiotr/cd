@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="32ecfd8c-d220-4446-9f4f-17641fbbb932" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +37,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -92,6 +93,8 @@
       <workItem from="1574859449070" duration="4605000" />
       <workItem from="1575360279068" duration="132000" />
       <workItem from="1575361335619" duration="4961000" />
+      <workItem from="1575460252803" duration="562000" />
+      <workItem from="1575460830467" duration="642000" />
     </task>
     <task id="LOCAL-00001" summary="sdd">
       <created>1566454344259</created>
@@ -130,6 +133,12 @@
     <MESSAGE value="sdd" />
     <MESSAGE value="sddddfdffd" />
     <option name="LAST_COMMIT_MESSAGE" value="sddddfdffd" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3070" y="216" width="649" height="616" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575460272715">
+      <screen x="2560" y="0" width="1680" height="1050" />
+    </state>
+    <state x="3070" y="216" width="649" height="616" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1575460272715" />
   </component>
   <component name="masterDetails">
     <states>
