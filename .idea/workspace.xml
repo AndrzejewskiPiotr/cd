@@ -2,57 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32ecfd8c-d220-4446-9f4f-17641fbbb932" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/description/form/form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/description/form/form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/description/form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/description/form/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/common/ErrorMessage/errorMessage-styled.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/common/ErrorMessage/errorMessage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/common/Field/field-styled.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/common/Field/field.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/common/Select/select-styled.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/common/Select/select.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/common/SingleSelect/singleSelect-styled.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/common/SingleSelect/singleSelect.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/descriptionForm-styled.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/descriptionForm.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/rollup.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/Viewer/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/Viewer/viewer-styled.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/Viewer/viewer.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/api/description.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/api/map.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/description/common/ErrorMessage/errorMessage-styled.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/description/common/ErrorMessage/errorMessage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/description/common/Field/field-styled.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/description/common/Field/field.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/description/common/RadioButton/radioButton-styled.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/description/common/RadioButton/radioButton.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/description/common/Select/select-styled.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/description/common/Select/select.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/description/form/form-fields.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/description/form/form-styled.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/description/form/form.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/description/form/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/hook/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/hook/use-promise.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/svg/exit/exit-svg-styled.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/svg/exit/exit-svg-types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/svg/exit/exit-svg.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/typings.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/utility/iiif.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/src/utility/slideLoader.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/form/tsconfig.test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/form-reducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Viewer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viewer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Viewer/viewer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viewer/viewer.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +95,7 @@
       <workItem from="1575360279068" duration="132000" />
       <workItem from="1575361335619" duration="4961000" />
       <workItem from="1575460252803" duration="562000" />
-      <workItem from="1575460830467" duration="2517000" />
+      <workItem from="1575460830467" duration="2629000" />
     </task>
     <task id="LOCAL-00001" summary="sdd">
       <created>1566454344259</created>

@@ -6,6 +6,13 @@ import { usePromise } from '../hook';
 import fetchImageData from '../api/map';
 import AnimatedForm from '../description/form';
 
+import 'leaflet/dist/leaflet.css';
+import 'leaflet.fullscreen/Control.FullScreen.css';
+import 'leaflet.fullscreen';
+import 'leaflet-easybutton';
+import 'leaflet-draw';
+import 'leaflet-draw/dist/leaflet.draw.css';
+
 function SlideWorkBench({ id, className }: { id: string; className?: string }) {
   const url = `/image/iiif/${id}`;
   const containerRef = useRef<HTMLInputElement>(null);

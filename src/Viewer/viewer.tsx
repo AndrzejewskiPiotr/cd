@@ -1,11 +1,5 @@
 import * as L from 'leaflet';
 import IIIF from '../utility/iiif';
-import 'leaflet/dist/leaflet.css';
-import 'leaflet.fullscreen/Control.FullScreen.css';
-import 'leaflet.fullscreen';
-import 'leaflet-easybutton';
-import 'leaflet-draw';
-import 'leaflet-draw/dist/leaflet.draw.css';
 
 function ImageViewer(data: number[], url: string): void {
   const [width, height, tileWidth, tileHeight, depth] = data;
@@ -32,16 +26,13 @@ function ImageViewer(data: number[], url: string): void {
     })
     .addTo(mp);
   // @ts-ignore
-  mp.addControl(
-    L.control
-      .fullscreen({
-        position: 'topright',
-        title: 'Show me the fullscreen !',
-        titleCancel: 'Exit fullscreen mode',
-        forcePseudoFullscreen: false
-      })
-      .addTo(mp)
-  );
+  mp.addControl(L.control.fullscreen({
+    position: 'topright',
+    title: 'Show me the fullscreen !',
+    titleCancel: 'Exit fullscreen mode',
+    content: null,
+    forcePseudoFullscreen: false,
+  }).addTo(mp));
 }
 
 export default ImageViewer;
