@@ -2,17 +2,21 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   display: grid;
+  box-sizing: border-box;
+  margin: 0 25px;
 `;
 
 const Input = styled.input`
-  height: 39px;
+  height: 32px;
   border-radius: 6px;
   border: solid 1.5px #c0ccda;
   background-color: #f5f8fa;
   padding: 0 8px 0;
-  font-size: 16px;
-  letter-spacing: 0.17px;
+  font-family: Nunito;
   box-sizing: border-box;
+  font-size: 14px;
+  letter-spacing: 0.17px;
+  color: #1f2d3d;
 
   &:focus {
     outline: none;

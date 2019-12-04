@@ -18,10 +18,11 @@ function AnimatedForm({ heading }: PAnimatedForm) {
   const [description, isError, isPending] = usePromise(fetchDescription(), []);
   const [open, set] = React.useState(false);
   const handleToggleModal = () => {
-    set(open => !open);
+    set((open: boolean) => !open);
   };
   // @ts-ignore
-  const { width, height, background, display, ...rest }: any = useSpring<any>({
+  const { width, height, background, display, ...rest }: any = useSpring({
+    // @ts-ignore
     ref: containerRef,
     config: config.stiff,
     from: {
@@ -37,8 +38,9 @@ function AnimatedForm({ heading }: PAnimatedForm) {
       background: open ? 'white' : 'rgba(0, 0, 0, 0)'
     }
   });
-
+  // @ts-ignore
   const { ...btn }: any = useSpring({
+    // @ts-ignore
     ref: openBtnRef,
     config: config.stiff,
     from: {

@@ -31,7 +31,7 @@ function createElement(category: string, data: any, formikProps: any): any {
     case 'button':
       return (
         <Submit key={data.key} type="submit">
-          Submit
+          Zapisz
         </Submit>
       );
     case 'field':
