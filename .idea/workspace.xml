@@ -4,6 +4,7 @@
     <list default="true" id="32ecfd8c-d220-4446-9f4f-17641fbbb932" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Viewer/viewer-styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Viewer/viewer-styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/description/form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/description/form/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +97,7 @@
       <workItem from="1575361335619" duration="4961000" />
       <workItem from="1575460252803" duration="562000" />
       <workItem from="1575460830467" duration="4360000" />
-      <workItem from="1575527199393" duration="8977000" />
+      <workItem from="1575527199393" duration="9357000" />
     </task>
     <task id="LOCAL-00001" summary="sdd">
       <created>1566454344259</created>

@@ -9,9 +9,10 @@ import ExitSvg from '../../svg/exit/exit-svg';
 
 type PAnimatedForm = {
   heading: string;
+  className?: string;
 };
 
-function AnimatedForm({ heading }: PAnimatedForm) {
+function AnimatedForm({ heading, className }: PAnimatedForm) {
   const openBtnRef: any = React.useRef(null);
   const containerRef: any = React.useRef(null);
   const transRef: any = React.useRef(null);
@@ -69,7 +70,7 @@ function AnimatedForm({ heading }: PAnimatedForm) {
   );
 
   return (
-    <Wrapper>
+    <Wrapper className={className}>
       <OpenBtn ref={openBtnRef} style={btn} onClick={handleToggleModal}>
         Opis Medyczny
       </OpenBtn>
