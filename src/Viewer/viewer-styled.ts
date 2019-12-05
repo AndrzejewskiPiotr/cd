@@ -3,7 +3,7 @@ import AnimatedForm from '../description/form';
 
 const Description = styled(AnimatedForm)`
  @media (max-width: 426px) {
-    display: none;
+    display: none !important;
  }
 `
 
