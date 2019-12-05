@@ -1,4 +1,11 @@
 import styled from 'styled-components';
+import AnimatedForm from '../description/form';
+
+const Description = styled(AnimatedForm)`
+ @media (max-width: 426px) {
+        display: none;
+    }
+`
 
 const Container = styled.div`
   #map-container {
@@ -10,4 +17,4 @@ const Wrapper = styled.div.attrs({
   id: 'map-container'
 })``;
 
-export { Container, Wrapper };
+export { Container, Wrapper,Description };

@@ -1,10 +1,9 @@
 import React, { useRef } from 'react';
 
-import { Container, Wrapper } from './viewer-styled';
+import { Container, Wrapper, Description } from './viewer-styled';
 import ImageViewer from './viewer';
 import { usePromise } from '../hook';
 import fetchImageData from '../api/map';
-import AnimatedForm from '../description/form';
 
 import 'leaflet/dist/leaflet.css';
 import 'leaflet.fullscreen/Control.FullScreen.css';
@@ -28,7 +27,7 @@ function SlideWorkBench({ id, className }: { id: string; className?: string }) {
     <Container>
       {isError && !isDataReceived ? null : (
         <Wrapper className={className} ref={containerRef}>
-          <AnimatedForm heading={id} />
+          <Description heading={id} />
         </Wrapper>
       )}
     </Container>
