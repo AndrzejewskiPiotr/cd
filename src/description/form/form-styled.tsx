@@ -28,6 +28,10 @@ const Container = styled(animated.form)`
   z-index: 401;
   border-radius: 8px;
   border: solid 1px #979797;
+
+   @media (max-width: 735px) {
+    max-width: 85%;
+  }
 `;
 
 const Item = styled(animated.div)`
