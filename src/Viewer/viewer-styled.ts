@@ -2,8 +2,11 @@ import styled from 'styled-components';
 import AnimatedForm from '../description/form';
 
 const Description = styled(AnimatedForm)`
+ && {
  @media (max-width: 426px) {
+ }
     display: none !important;
+ }
  }
 `
 
