@@ -32,7 +32,7 @@ function DescriptionForm({
 }: any) {
   const submitForm = async (values: any) => {
     await new Promise(resolve => setTimeout(resolve, 500));
-    alert(JSON.stringify(values, null, 2));
+    console.log(JSON.stringify(values, null, 2));
   };
 
   const handleInitialValues = () => {
