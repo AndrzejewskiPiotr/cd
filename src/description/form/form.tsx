@@ -30,7 +30,7 @@ function DescriptionForm({
   initialValue,
   ...props
 }: any) {
-  const handleSubmit = async (values: any) => {
+  const submitForm = async (values: any) => {
     await new Promise(resolve => setTimeout(resolve, 500));
     alert(JSON.stringify(values, null, 2));
   };
@@ -54,7 +54,7 @@ function DescriptionForm({
       initialValues={handleInitialValues()}
       enableReinitialize={enableReinitialize}
       validationSchema={FormSchema}
-      onSubmit={handleSubmit}
+      onSubmit={submitForm}
     >
       {({ handleSubmit, ...formik }: any) => (
         <Container onSubmit={handleSubmit} {...props}>
