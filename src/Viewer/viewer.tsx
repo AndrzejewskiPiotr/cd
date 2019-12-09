@@ -13,8 +13,7 @@ function ImageViewer(data: number[], url: string): void {
   });
   console.log(mp)
   const container: any = L.DomUtil.get('map-container');
-  if(container != null){
-    container._leaflet_id = null;
+  if(mp){
     mp.remove()
   }
   L.control.zoom({
