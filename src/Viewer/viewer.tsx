@@ -17,6 +17,7 @@ function ImageViewer(data: number[], url: string): void {
     container._leaflet_id = null;
     mp.off()
     mp.remove()
+    // @ts-ignore
     mp = null
     mp = L.map('map-container', {
       crs: L.CRS.Simple,
