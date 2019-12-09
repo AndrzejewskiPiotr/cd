@@ -18,9 +18,6 @@ function ImageViewer(data: number[], url: string): void {
   }
   console.log(mp,L.control)
   // @ts-ignore
-  L.control.zoom({
-    position: 'topright'
-  }).addTo(mp);
 
   IIIF(mp, `${url}`, width, height, tileWidth, tileHeight, depth);
   mp.setView([-height / 2, width / 2], -6);
