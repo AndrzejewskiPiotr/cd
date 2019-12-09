@@ -16,6 +16,8 @@ function ImageViewer(data: number[], url: string): void {
   if(mp){
     mp.remove()
   }
+  console.log(mp,L.control)
+  // @ts-ignore
   L.control.zoom({
     position: 'topright'
   }).addTo(mp);
