@@ -13,10 +13,11 @@ function ImageViewer(data: number[], url: string): void {
   });
   console.log(mp)
   const container: any = L.DomUtil.get('map-container');
-  if(mp && container){
+  if(container){
     container._leaflet_id = null;
     mp.off()
     mp.remove()
+    mp = null
     mp = L.map('map-container', {
       crs: L.CRS.Simple,
       zoomControl:false,})
