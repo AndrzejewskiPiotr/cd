@@ -7,7 +7,7 @@ import 'leaflet-draw/dist/leaflet.draw.css'
 
 function ImageViewer(data: number[], url: string): void {
   const [width, height, tileWidth, tileHeight, depth] = data;
-  const mp = L.map('map-container', {
+  let mp = L.map('map-container', {
     crs: L.CRS.Simple,
     zoomControl:false,
   });
@@ -16,6 +16,9 @@ function ImageViewer(data: number[], url: string): void {
   if(mp){
     mp.off()
     mp.remove()
+    mp = L.map('map-container', {
+      crs: L.CRS.Simple,
+      zoomControl:false,})
   }
   console.log(mp,L.control)
   // @ts-ignore
