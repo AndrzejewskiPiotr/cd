@@ -13,7 +13,6 @@ import 'leaflet-draw';
 import 'leaflet-draw/dist/leaflet.draw.css';
 
 function SlideWorkBench({ id, className }: { id: string; className?: string }) {
-  console.log(id,className)
   const url = `/image/iiif/${id}`;
   const containerRef = useRef<HTMLInputElement>(null);
   const [data, isError] = usePromise(fetchImageData(`${url}/info.json`), []);
@@ -31,6 +30,7 @@ function SlideWorkBench({ id, className }: { id: string; className?: string }) {
           <Description heading={id} />
         </Wrapper>
       )}
+      {console.log(id)}
     </Container>
   );
 }
