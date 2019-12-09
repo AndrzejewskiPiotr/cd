@@ -14,6 +14,7 @@ function ImageViewer(data: number[], url: string): void {
   console.log(mp)
   const container: any = L.DomUtil.get('map-container');
   if(mp){
+    mp.off()
     mp.remove()
   }
   console.log(mp,L.control)
