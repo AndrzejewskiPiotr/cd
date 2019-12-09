@@ -7,7 +7,7 @@ import 'leaflet-draw/dist/leaflet.draw.css'
 
 function ImageViewer(data: number[], url: string): void {
   const [width, height, tileWidth, tileHeight, depth] = data;
-  let mp = L.map('map-container', {
+  const mp = L.map('map-container', {
     crs: L.CRS.Simple,
     zoomControl:false,
   });
