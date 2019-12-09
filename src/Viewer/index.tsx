@@ -22,6 +22,9 @@ function SlideWorkBench({ id, className }: { id: string; className?: string }) {
   if (isDataReceived && isContainerMounted) {
     ImageViewer(data, url);
   }
+  else {
+    return null
+  }
 
   return (
     <Container>
