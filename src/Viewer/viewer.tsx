@@ -16,10 +16,6 @@ function ImageViewer(data: number[], url: string): void {
   if(container != null){
     container._leaflet_id = null;
     mp.remove()
-    mp = L.map('map-container', {
-      crs: L.CRS.Simple,
-      zoomControl:false,
-    });
   }
   L.control.zoom({
     position: 'topright'
