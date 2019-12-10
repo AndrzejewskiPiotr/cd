@@ -9,13 +9,15 @@ import ExitSvg from '../../svg/exit/exit-svg';
 
 type PAnimatedForm = {
   heading: string;
+  id: string
 };
 
-function AnimatedForm({ heading }: PAnimatedForm) {
+function AnimatedForm({ heading, id }: PAnimatedForm) {
+  const url = `/repository/slides/${id}/description`
   const openBtnRef: any = React.useRef(null);
   const containerRef: any = React.useRef(null);
   const transRef: any = React.useRef(null);
-  const [description, isError, isPending] = usePromise(fetchDescription(), []);
+  const [description, isError, isPending] = usePromise(fetchDescription(url), []);
   const [open, set] = React.useState(false);
   const handleToggleModal = () => {
     set((open: boolean) => !open);
@@ -52,7 +54,7 @@ function AnimatedForm({ heading }: PAnimatedForm) {
       display: open ? 'none' : 'block'
     }
   });
-  const transitions: any = useTransition(open ? data : [], item => item.key, {
+  const transitions: any = useTransition(open ? data : [], (item: any) => item.key, {
     ref: transRef,
     unique: true,
     trail: 40,

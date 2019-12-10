@@ -5,7 +5,7 @@ import ImageViewer from './viewer';
 import { usePromise } from '../hook';
 import fetchImageData from '../api/map';
 
-function SlideWorkBench({ id, className }: { id: string; className?: string }) {
+function SlideWorkBench({name, id, className }: { name: string,id: string; className?: string }) {
   const url = `/image/iiif/${id}`;
   const containerRef = useRef<HTMLInputElement>(null);
   const [data, isError] = usePromise(fetchImageData(`${url}/info.json`), []);
@@ -20,7 +20,7 @@ function SlideWorkBench({ id, className }: { id: string; className?: string }) {
     <Container>
       {isError && !isDataReceived ? null : (
         <Wrapper className={className} ref={containerRef}>
-          <Description heading={id} />
+          <Description heading={name} id={id} />
         </Wrapper>
       )}
     </Container>
