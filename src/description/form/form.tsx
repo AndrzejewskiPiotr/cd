@@ -40,13 +40,13 @@ function DescriptionForm({
       code: string;
     }}) => {
     const url = `/repository/slides/${id}/description`
+    console.log(url)
     const body = {
       description: {
         ...values
       },
       slide_id:id
     }
-    console.log(body)
     return await updateDescription(url,body)
   };
 
