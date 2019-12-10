@@ -25,7 +25,7 @@ function ImageViewer(data: number[], url: string): void {
       [-height * 1.1, width * 1.1]
     ])
   );
-  mp.setView([-height / 2, width / 2], -7);
+  //mp.setView([-height / 2, width / 2], -7);
 
   mp.addLayer(editableLayers);
   // @ts-ignore

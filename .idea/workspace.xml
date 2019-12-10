@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32ecfd8c-d220-4446-9f4f-17641fbbb932" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="32ecfd8c-d220-4446-9f4f-17641fbbb932" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +98,7 @@
       <workItem from="1575875375933" duration="2427000" />
       <workItem from="1575884526516" duration="69000" />
       <workItem from="1575884607374" duration="12944000" />
-      <workItem from="1575961322493" duration="8597000" />
+      <workItem from="1575961322493" duration="9217000" />
     </task>
     <task id="LOCAL-00001" summary="sdd">
       <created>1566454344259</created>
@@ -146,6 +143,22 @@
       <screen x="2560" y="0" width="1680" height="1050" />
     </state>
     <state x="3070" y="216" width="649" height="616" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1575460272715" />
+    <state width="1652" height="262" key="GridCell.Tab.0.bottom" timestamp="1575975210452">
+      <screen x="2560" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1652" height="262" key="GridCell.Tab.0.bottom/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1575975210452" />
+    <state width="1652" height="262" key="GridCell.Tab.0.center" timestamp="1575975210451">
+      <screen x="2560" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1652" height="262" key="GridCell.Tab.0.center/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1575975210451" />
+    <state width="1652" height="262" key="GridCell.Tab.0.left" timestamp="1575975210451">
+      <screen x="2560" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1652" height="262" key="GridCell.Tab.0.left/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1575975210451" />
+    <state width="1652" height="262" key="GridCell.Tab.0.right" timestamp="1575975210451">
+      <screen x="2560" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1652" height="262" key="GridCell.Tab.0.right/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1575975210451" />
   </component>
   <component name="masterDetails">
     <states>
