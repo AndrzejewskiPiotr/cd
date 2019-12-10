@@ -10,10 +10,10 @@ type ResponseData = {
 
 async function fetchHandler() {
   return fetch(
-    '/slides/b21f01f3-fe3e-4bd9-a4de-b19065cf4445/description'
+    'repository/slides/b21f01f3-fe3e-4bd9-a4de-b19065cf4445/description'
   )
     .then(res => {
-      console.log(res)
+      console.log('rees',res.json())
       if (res.status >= 400) {
         console.log('Bad response from server');
       }
