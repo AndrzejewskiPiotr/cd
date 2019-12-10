@@ -13,11 +13,9 @@ function ImageViewer(data: number[], url: string): void {
   if (container != null) {
     container._leaflet_id = null;
   }
-  // @ts-ignore
   const mp = L.map('map-container', {
     crs: L.CRS.Simple,
-    zoomControl: false,
-    center: false
+    zoomControl: false
   });
   IIIF(mp, `${url}`, width, height, tileWidth, tileHeight, depth);
   mp.setMaxBounds(

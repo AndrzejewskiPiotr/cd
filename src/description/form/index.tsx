@@ -9,15 +9,13 @@ import ExitSvg from '../../svg/exit/exit-svg';
 
 type PAnimatedForm = {
   heading: string;
-  id: string;
 };
 
-function AnimatedForm({ heading, id }: PAnimatedForm) {
-  const url = `/repository/slides/${id}/description`;
+function AnimatedForm({ heading }: PAnimatedForm) {
   const openBtnRef: any = React.useRef(null);
   const containerRef: any = React.useRef(null);
   const transRef: any = React.useRef(null);
-  const [description, isError, isPending] = usePromise(fetchDescription(url), []);
+  const [description, isError, isPending] = usePromise(fetchDescription(), []);
   const [open, set] = React.useState(false);
   const handleToggleModal = () => {
     set((open: boolean) => !open);

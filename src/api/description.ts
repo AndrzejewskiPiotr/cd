@@ -8,8 +8,10 @@ type ResponseData = {
   };
 };
 
-async function fetchHandler(url: string) {
-  return fetch(url)
+async function fetchHandler() {
+  return fetch(
+    '/repository/slides/b21f01f3-fe3e-4bd9-a4de-b19065cf4445/description'
+  )
     .then(res => {
       if (res.status >= 400) {
         console.log('Bad response from server');
@@ -27,8 +29,8 @@ async function fetchHandler(url: string) {
     });
 }
 
-async function fetchDescription(url: string) {
-  return await fetchHandler(url);
+async function fetchDescription() {
+  return await fetchHandler();
 }
 
 export default fetchDescription;
