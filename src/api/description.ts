@@ -9,24 +9,14 @@ type ResponseData = {
 };
 
 async function fetchHandler() {
-  return new Promise(resolve => {
-    setTimeout(function() {
-      resolve({
-        slide_id: '131232112',
-        description: {
-          classification: {
-            standard: 'ICD-10',
-            code: 'A17'
-          }
-        }
-      });
-    }, 300);
-  })
-    .then((res: any) => {
+  return fetch(
+    '/slides/b21f01f3-fe3e-4bd9-a4de-b19065cf4445/description'
+  )
+    .then(res => {
       if (res.status >= 400) {
-        throw new Error('Bad response from server');
+        console.log('Bad response from server');
       }
-      return res;
+      return res.json();
     })
     .then(response => {
       const {

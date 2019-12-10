@@ -11,21 +11,7 @@ function ImageViewer(data: number[], url: string): void {
     crs: L.CRS.Simple,
     zoomControl:false,
   });
-  console.log(mp)
-  const container: any = L.DomUtil.get('map-container');
-  if(container){
-    container._leaflet_id = null;
-    mp.off()
-    mp.remove()
-    // @ts-ignore
-    mp = null
-    mp = L.map('map-container', {
-      crs: L.CRS.Simple,
-      zoomControl:false,})
-  }
-  console.log(mp,L.control)
   // @ts-ignore
-
   IIIF(mp, `${url}`, width, height, tileWidth, tileHeight, depth);
   mp.setView([-height / 2, width / 2], -6);
   var editableLayers = new L.FeatureGroup();
