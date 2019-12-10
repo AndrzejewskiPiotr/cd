@@ -2,45 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32ecfd8c-d220-4446-9f4f-17641fbbb932" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rollup.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/Viewer/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/Viewer/viewer-styled.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/Viewer/viewer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/api/description.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/api/map.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/description/common/ErrorMessage/errorMessage-styled.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/description/common/ErrorMessage/errorMessage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/description/common/Field/field-styled.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/description/common/Field/field.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/description/common/RadioButton/radioButton-styled.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/description/common/RadioButton/radioButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/description/common/Select/select-styled.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/description/common/Select/select.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/description/form/form-fields.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/description/form/form-styled.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/description/form/form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/description/form/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/hook/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/hook/use-promise.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/svg/exit/exit-svg-styled.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/svg/exit/exit-svg-types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/svg/exit/exit-svg.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/typings.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/utility/iiif.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/utility/slideLoader.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tsconfig.test.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/description.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/description.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Viewer/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Viewer/viewer-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Viewer/viewer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/api/description.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/api/map.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/description/common/ErrorMessage/errorMessage-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/description/common/ErrorMessage/errorMessage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/description/common/Field/field-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/description/common/Field/field.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/description/common/RadioButton/radioButton-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/description/common/RadioButton/radioButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/description/common/Select/select-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/description/common/Select/select.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/description/form/form-fields.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/description/form/form-styled.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/description/form/form.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/description/form/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/hook/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/hook/use-promise.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/svg/exit/exit-svg-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/svg/exit/exit-svg-types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/svg/exit/exit-svg.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/typings.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/utility/iiif.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/utility/slideLoader.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,9 +68,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/form" />
-      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/form/common" />
       <recent name="$PROJECT_DIR$/.." />
     </key>
@@ -138,7 +128,7 @@
       <workItem from="1575875375933" duration="2427000" />
       <workItem from="1575884526516" duration="69000" />
       <workItem from="1575884607374" duration="12944000" />
-      <workItem from="1575961322493" duration="1729000" />
+      <workItem from="1575961322493" duration="2407000" />
     </task>
     <task id="LOCAL-00001" summary="sdd">
       <created>1566454344259</created>
