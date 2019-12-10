@@ -29,7 +29,7 @@ const Container = styled(animated.form)`
   border-radius: 8px;
   border: solid 1px #979797;
 
-   @media (max-width: 735px) {
+  @media (max-width: 735px) {
     max-width: 85%;
   }
 `;

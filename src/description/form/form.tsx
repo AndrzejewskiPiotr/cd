@@ -23,6 +23,7 @@ const FormSchema = yup.object().shape({
     standard: yup.string().required('Pole jest wymagane !')
   })
 });
+
 function DescriptionForm({
   children,
   description,
@@ -30,9 +31,9 @@ function DescriptionForm({
   initialValue,
   ...props
 }: any) {
-  const submitForm = async (values: any) => {
+  const handleSubmit = async (values: any) => {
     await new Promise(resolve => setTimeout(resolve, 500));
-    console.log(JSON.stringify(values, null, 2));
+    alert(JSON.stringify(values, null, 2));
   };
 
   const handleInitialValues = () => {
@@ -54,7 +55,7 @@ function DescriptionForm({
       initialValues={handleInitialValues()}
       enableReinitialize={enableReinitialize}
       validationSchema={FormSchema}
-      onSubmit={submitForm}
+      onSubmit={handleSubmit}
     >
       {({ handleSubmit, ...formik }: any) => (
         <Container onSubmit={handleSubmit} {...props}>
