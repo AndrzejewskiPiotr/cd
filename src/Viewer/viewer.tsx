@@ -25,8 +25,38 @@ function ImageViewer(data: number[], url: string): void {
       [-height * 1.1, width * 1.1]
     ])
   );
-  //mp.setView([-height / 2, width / 2], -7);
-
+  mp.setView([-height / 2, width / 2], -7);
+  const options = {
+    position: 'topleft',
+    draw: {
+      polyline: {
+        shapeOptions: {
+          color: '#f357a1',
+          weight: 10
+        }
+      },
+      polygon: {
+        allowIntersection: false, // Restricts shapes to simple polygons
+        drawError: {
+          color: '#e1e100', // Color the shape will turn when intersects
+          message: '<strong>Oh snap!<strong> you can\'t draw that!' // Message that will show when intersect
+        },
+        shapeOptions: {
+          color: '#bada55'
+        }
+      },
+      circle: false, // Turns off this drawing tool
+      rectangle: {
+        shapeOptions: {
+          clickable: false
+        }
+      },
+    },
+    edit: {
+      featureGroup: editableLayers, //REQUIRED!!
+      remove: false
+    }
+  };
   mp.addLayer(editableLayers);
   // @ts-ignore
   L.control.zoom({ position: 'topright' }).addTo(mp);
