@@ -1,11 +1,5 @@
 import * as L from 'leaflet';
 import IIIF from '../utility/iiif';
-import 'leaflet/dist/leaflet.css';
-import 'leaflet.fullscreen/Control.FullScreen.css';
-import 'leaflet.fullscreen';
-import 'leaflet-easybutton';
-import 'leaflet-draw';
-import 'leaflet-draw/dist/leaflet.draw.css';
 
 function ImageViewer(data: number[], url: string): void {
   const [width, height, tileWidth, tileHeight, depth] = data;

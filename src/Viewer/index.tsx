@@ -1,5 +1,10 @@
 import React, { useRef } from 'react';
-
+import 'leaflet/dist/leaflet.css';
+import 'leaflet.fullscreen/Control.FullScreen.css';
+import 'leaflet.fullscreen';
+import 'leaflet-easybutton';
+import 'leaflet-draw';
+import 'leaflet-draw/dist/leaflet.draw.css';
 import { Container, Wrapper, Description } from './viewer-styled';
 import ImageViewer from './viewer';
 import { usePromise } from '../hook';
