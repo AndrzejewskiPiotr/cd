@@ -1,6 +1,6 @@
 import * as React from 'react';
 import DescriptionForm from './form';
-import fetchDescription from '../../api/description';
+import { fetchDescription } from '../../api/description';
 import { usePromise } from '../../hook/index';
 import { data, createElement } from './form-fields';
 import { OpenBtn, Wrapper, Item, Header, Heading } from './form-styled';

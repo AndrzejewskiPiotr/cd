@@ -3,6 +3,8 @@ import { Formik } from 'formik';
 import { Container } from './form-styled';
 import * as yup from 'yup';
 
+import { updateDescription } from '../../api/description';
+
 export interface FormValues {
   classification: {
     code: string;
@@ -31,14 +33,25 @@ function DescriptionForm({
   initialValue,
   ...props
 }: any) {
-  const handleSubmit = async (values: any) => {
-    await new Promise(resolve => setTimeout(resolve, 500));
-    alert(JSON.stringify(values, null, 2));
+  const [id, standard, code] = description;
+
+  const handleSubmit = async (values: { classification: {
+      standard: string;
+      code: string;
+    }}) => {
+    const url = `/repository/slides/${id}/description`
+    const body = {
+      description: {
+        ...values
+      },
+      slide_id:id
+    }
+    console.log(body)
+    return await updateDescription(url,body)
   };
 
   const handleInitialValues = () => {
     if (description.length !== 0) {
-      const [id, standard, code] = description;
       return {
         classification: {
           code,

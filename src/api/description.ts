@@ -29,8 +29,40 @@ async function fetchHandler(url: string) {
     });
 }
 
+async function updateHandler(url: string, body: ResponseData) {
+  return fetch(
+    url,
+    {
+      method:'PUT',
+      body: JSON.stringify(body)
+    }
+  )
+    .then(res => {
+      if (res.status >= 400) {
+        console.log('Bad response from server');
+      }
+      return res.json();
+    })
+    .then(response => {
+      const {
+        slide_id,
+        description: {
+          classification: { standard, code }
+        }
+      }: ResponseData = response;
+      return [slide_id, standard, code];
+    });
+}
+
 async function fetchDescription(url: string) {
   return await fetchHandler(url);
 }
 
-export default fetchDescription;
+async function updateDescription(url: string, body: ResponseData) {
+  return await updateHandler(url, body)
+}
+
+export {
+  fetchDescription,
+  updateDescription
+};
