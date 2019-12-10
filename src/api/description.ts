@@ -10,7 +10,7 @@ type ResponseData = {
 
 async function fetchHandler() {
   return fetch(
-    'https://dev.biorepository.apl.task.gda.pl/repository/slides/b21f01f3-fe3e-4bd9-a4de-b19065cf4445/description'
+    '/repository/slides/b21f01f3-fe3e-4bd9-a4de-b19065cf4445/description'
   )
     .then(res => {
       if (res.status >= 400) {
