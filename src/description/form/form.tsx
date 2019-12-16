@@ -27,10 +27,8 @@ const FormSchema = yup.object().shape({
 });
 
 const createDescription = (description: any,id: string) => ({
-  description: {
   ...description,
     slide_id:id
-  },
 })
 
 function DescriptionForm({
