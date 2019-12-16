@@ -1,10 +1,10 @@
 type ResponseData = {
-  slide_id: string;
   description: {
     classification: {
       standard: string;
       code: string;
     };
+    slide_id: string;
   };
 };
 
@@ -19,14 +19,14 @@ async function fetchHandler(url: string) {
       return res.json();
     })
     .then(response => {
-      console.log(response)
+      console.log('fetch',response)
       const {
         description: {
-          classification: { standard, code }
+          classification: { standard, code },
+          slide_id
         },
-        slide_id,
       }: ResponseData = response;
-      return [standard, code,slide_id, ];
+      return [standard, code,slide_id];
     });
 }
 
@@ -46,9 +46,9 @@ async function updateHandler(url: string, body: ResponseData) {
     })
     .then(response => {
       const {
-        slide_id,
         description: {
-          classification: { standard, code }
+          classification: { standard, code },
+          slide_id,
         }
       }: ResponseData = response;
       return [standard, code, slide_id,];
