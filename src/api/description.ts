@@ -19,7 +19,6 @@ async function fetchHandler(url: string) {
       return res.json();
     })
     .then(response => {
-      console.log('fetch',response)
       const {
         description: {
           classification: { standard, code },

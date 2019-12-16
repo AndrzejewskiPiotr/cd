@@ -39,16 +39,12 @@ function DescriptionForm({
   ...props
 }: any) {
   const [standard, code, id] = description;
-  console.log('decrption',description)
-  console.log('descript id', id)
   const handleSubmit = async (values: { classification: {
       standard: string;
       code: string;
     }}) => {
     const url = `/repository/slides/${id}/description`
-    console.log(url,id)
     const updatedDescription = createDescription(values,id)
-    console.log(updatedDescription)
     return await updateDescription(url,updatedDescription)
   };
 
