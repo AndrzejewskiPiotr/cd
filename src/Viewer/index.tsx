@@ -21,7 +21,7 @@ function SlideWorkBench({
   const { current: isContainerMounted } = containerRef;
 
   if (isDataReceived && isContainerMounted) {
-    ImageViewer(data, url);
+    ImageViewer(data, `${url}/info.json`);
   }
 
   return (
