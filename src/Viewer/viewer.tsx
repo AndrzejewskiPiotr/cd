@@ -14,6 +14,7 @@ function ImageViewer(data: number[], url: string): void {
     container._leaflet_id = null;
   }
   const mp = L.map('map-container', {
+    center: [0, 0],
     crs: L.CRS.Simple,
     zoomControl: false
   });
