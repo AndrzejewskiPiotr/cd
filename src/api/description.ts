@@ -19,6 +19,7 @@ async function fetchHandler(url: string) {
       return res.json();
     })
     .then(response => {
+      console.log(response)
       const {
         slide_id,
         description: {
@@ -44,7 +45,6 @@ async function updateHandler(url: string, body: ResponseData) {
       return res.json();
     })
     .then(response => {
-      console.log(response)
       const {
         slide_id,
         description: {
