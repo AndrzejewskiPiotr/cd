@@ -26,10 +26,10 @@ const FormSchema = yup.object().shape({
   })
 });
 
-const createDescription = (description: any,id: string) => ({
+const createDescription = (description: any, id: string) => ({
   ...description,
-    slide_id:id
-})
+  slide_id: id
+});
 
 function DescriptionForm({
   children,
@@ -39,13 +39,15 @@ function DescriptionForm({
   ...props
 }: any) {
   const [standard, code, id] = description;
-  const handleSubmit = async (values: { classification: {
+  const handleSubmit = async (values: {
+    classification: {
       standard: string;
       code: string;
-    }}) => {
-    const url = `/repository/slides/${id}/description`
-    const updatedDescription = createDescription(values,id)
-    return await updateDescription(url,updatedDescription)
+    };
+  }) => {
+    const url = `/repository/slides/${id}/description`;
+    const updatedDescription = createDescription(values, id);
+    return await updateDescription(url, updatedDescription);
   };
 
   const handleInitialValues = () => {

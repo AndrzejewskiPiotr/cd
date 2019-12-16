@@ -9,15 +9,18 @@ import ExitSvg from '../../svg/exit/exit-svg';
 
 type PAnimatedForm = {
   heading: string;
-  id: string
+  id: string;
 };
 
 function AnimatedForm({ heading, id }: PAnimatedForm) {
-  const url = `/repository/slides/${id}/description`
+  const url = `/repository/slides/${id}/description`;
   const openBtnRef: any = React.useRef(null);
   const containerRef: any = React.useRef(null);
   const transRef: any = React.useRef(null);
-  const [description, isError, isPending] = usePromise(fetchDescription(url), []);
+  const [description, isError, isPending] = usePromise(
+    fetchDescription(url),
+    []
+  );
   const [open, set] = React.useState(false);
   const handleToggleModal = () => {
     set((open: boolean) => !open);
@@ -54,14 +57,18 @@ function AnimatedForm({ heading, id }: PAnimatedForm) {
       display: open ? 'none' : 'block'
     }
   });
-  const transitions: any = useTransition(open ? data : [], (item: any) => item.key, {
-    ref: transRef,
-    unique: true,
-    trail: 40,
-    from: { opacity: 0, transform: 'scale(0)' },
-    enter: { opacity: 1, transform: 'scale(1)' },
-    leave: { opacity: 0, transform: 'scale(0)' }
-  });
+  const transitions: any = useTransition(
+    open ? data : [],
+    (item: any) => item.key,
+    {
+      ref: transRef,
+      unique: true,
+      trail: 40,
+      from: { opacity: 0, transform: 'scale(0)' },
+      enter: { opacity: 1, transform: 'scale(1)' },
+      leave: { opacity: 0, transform: 'scale(0)' }
+    }
+  );
 
   useChain(
     open

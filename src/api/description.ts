@@ -9,9 +9,7 @@ type ResponseData = {
 };
 
 async function fetchHandler(url: string) {
-  return fetch(
-    url
-  )
+  return fetch(url)
     .then(res => {
       if (res.status >= 400) {
         console.log('Bad response from server');
@@ -23,20 +21,17 @@ async function fetchHandler(url: string) {
         description: {
           classification: { standard, code },
           slide_id
-        },
+        }
       }: ResponseData = response;
-      return [standard, code,slide_id];
+      return [standard, code, slide_id];
     });
 }
 
 async function updateHandler(url: string, body: ResponseData) {
-  return fetch(
-    url,
-    {
-      method:'PUT',
-      body: JSON.stringify(body)
-    }
-  )
+  return fetch(url, {
+    method: 'PUT',
+    body: JSON.stringify(body)
+  })
     .then(res => {
       if (res.status >= 400) {
         console.log('Bad response from server');
@@ -47,10 +42,10 @@ async function updateHandler(url: string, body: ResponseData) {
       const {
         description: {
           classification: { standard, code },
-          slide_id,
+          slide_id
         }
       }: ResponseData = response;
-      return [standard, code, slide_id,];
+      return [standard, code, slide_id];
     });
 }
 
@@ -59,10 +54,7 @@ async function fetchDescription(url: string) {
 }
 
 async function updateDescription(url: string, body: ResponseData) {
-  return await updateHandler(url, body)
+  return await updateHandler(url, body);
 }
 
-export {
-  fetchDescription,
-  updateDescription
-};
+export { fetchDescription, updateDescription };
