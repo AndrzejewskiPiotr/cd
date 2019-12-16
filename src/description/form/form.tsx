@@ -26,6 +26,13 @@ const FormSchema = yup.object().shape({
   })
 });
 
+const createDescription = (description: any,id: string) => ({
+  description: {
+  ...description
+  },
+  slide_id:id
+})
+
 function DescriptionForm({
   children,
   description,
@@ -41,13 +48,9 @@ function DescriptionForm({
     }}) => {
     const url = `/repository/slides/${id}/description`
     console.log(url)
-    const body = {
-      description: {
-        ...values
-      },
-      slide_id:id
-    }
-    return await updateDescription(url,body)
+    const updatedDescription = createDescription(values,id)
+    console.log(updatedDescription)
+    return await updateDescription(url,updatedDescription)
   };
 
   const handleInitialValues = () => {

@@ -13,6 +13,7 @@ type PAnimatedForm = {
 };
 
 function AnimatedForm({ heading, id }: PAnimatedForm) {
+  console.log('form : id', id)
   const url = `/repository/slides/${id}/description`
   const openBtnRef: any = React.useRef(null);
   const containerRef: any = React.useRef(null);
@@ -76,6 +77,7 @@ function AnimatedForm({ heading, id }: PAnimatedForm) {
         Opis Medyczny
       </OpenBtn>
       <DescriptionForm
+        id={id}
         style={{ ...rest, width, height, background, display }}
         description={description}
         render={(formikProps: any) => (
