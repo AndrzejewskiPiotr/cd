@@ -17,6 +17,8 @@ function ImageViewer(data: number[], url: string): void {
   const mp = L.map('map-container', {
     crs: L.CRS.Simple,
     zoomControl: false,
+    zoom:0,
+    center:[0,0]
   });
   // @ts-ignore
   L.tileLayer.iiif(url).addTo(mp);
