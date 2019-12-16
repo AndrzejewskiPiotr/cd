@@ -40,7 +40,7 @@ function DescriptionForm({
   initialValue,
   ...props
 }: any) {
-  const [id, standard, code] = description;
+  const [standard, code, id] = description;
   console.log('decrption',description)
   console.log('descript id', id)
   const handleSubmit = async (values: { classification: {

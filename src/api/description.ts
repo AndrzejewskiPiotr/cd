@@ -21,12 +21,12 @@ async function fetchHandler(url: string) {
     .then(response => {
       console.log(response)
       const {
-        slide_id,
         description: {
           classification: { standard, code }
-        }
+        },
+        slide_id,
       }: ResponseData = response;
-      return [slide_id, standard, code];
+      return [standard, code,slide_id, ];
     });
 }
 
@@ -51,7 +51,7 @@ async function updateHandler(url: string, body: ResponseData) {
           classification: { standard, code }
         }
       }: ResponseData = response;
-      return [slide_id, standard, code];
+      return [standard, code, slide_id,];
     });
 }
 
