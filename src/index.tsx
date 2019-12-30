@@ -2,6 +2,6 @@
  * @class SlideWorkBench
  */
 
-import SlideWorkBench from './Viewer';
+import { SlideWorkBench } from './viewer';
 
 export default SlideWorkBench;
