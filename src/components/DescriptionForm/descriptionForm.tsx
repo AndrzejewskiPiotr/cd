@@ -80,15 +80,20 @@ export function DescriptionForm({ heading, id }: PAnimatedForm) {
     from: { width: '9%', height: '5%', background: 'white' },
     to: { width: open ? '100%' : '9%', height: open ? '80%' : '5%', background: open ? 'white' : 'white' }
   })
+  // @ts-ignore
   const fieldsAnimation = useTransition(
     open ? formFields : [],
     (item: any) => item.key,
     {
       // @ts-ignore
       ref: fieldsRef,
+      // @ts-ignore
       trail: 1,
+      // @ts-ignore
       from: { opacity: 0, transform: 'scale(0)' },
+      // @ts-ignore
       enter: { opacity: 1, transform: 'scale(1)' },
+      // @ts-ignore
       leave: { opacity: 0, transform: 'scale(0)', display: open ? 'block' : 'none' }
     }
   );
@@ -97,7 +102,7 @@ export function DescriptionForm({ heading, id }: PAnimatedForm) {
     // @ts-ignore
     ref:openModalBtnRef,
     config: config.stiff,
-    to: async (next: any, cancel: any) => {
+    to: async (next: any) => {
       await next({display: open ? 'none' : 'flex', opacity: open ? 0: 1 })
     },
     from: {opacity: 1}
@@ -107,7 +112,7 @@ export function DescriptionForm({ heading, id }: PAnimatedForm) {
     // @ts-ignore
     ref:headerRef,
     config: config.stiff,
-    to: async (next: any, cancel: any) => {
+    to: async (next: any) => {
       await next({display: open ? 'flex': 'none'})
       await next({opacity: open ? 1: 0 })
     },
@@ -121,12 +126,6 @@ export function DescriptionForm({ heading, id }: PAnimatedForm) {
   )
   return (
     <Wrapper>
-      <OpenBtn
-        ref={openBtnRef}
-        style={btn}
-        onClick={handleToggleModal}
-        text="Opis Medyczny"
-      />
       <Container
         style={{ ...rest, width, height }}
         initialValues={handleInitialValues()}

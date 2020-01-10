@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 import { animated } from 'react-spring';
 
 import { CommonForm } from '../common/form';
@@ -12,12 +12,12 @@ import {
   SUBMIT_BTN_SHADOW,
   FORM_BORDER_COLOR,
   NOTDESKTOP,
-  DESCRIPTION_FORM_BORDER
-} from '../../style';
+  DESCRIPTION_FORM_BORDER } from '../../style';
 
-const MAX_HEIGHT_FORM = 90; // %
-const MAX_WIDTH_FORM_DESKTOP = 600; // PX
-const MAX_WIDTH_FORM_MOBILE = 85; // %
+
+const MAX_HEIGHT_FORM = 90 // %
+const MAX_WIDTH_FORM_DESKTOP = 600 // PX
+const MAX_WIDTH_FORM_MOBILE = 85 // %
 
 const Wrapper = styled.div``;
 
@@ -25,22 +25,22 @@ const Container = styled(animated(CommonForm))`
   position: absolute;
   top: 10px;
   left: 10px;
-  max-width: ${MAX_WIDTH_FORM_DESKTOP}px;
-  width: 100%;
-  max-height: ${MAX_HEIGHT_FORM}%;
+  background: white;
+  cursor: pointer;
+  max-width: 600px;
+  display: flex;
+  max-height: 800px;
   flex-flow: column;
-  display: none;
-  background: transparent;
-  box-shadow: none;
   will-change: width, height;
   z-index: 401;
   border-radius: 8px;
-  border: solid 1px ${FORM_BORDER_COLOR};
+  border: solid 1px #979797;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.05);
 
   ${NOTDESKTOP} {
     max-width: ${MAX_WIDTH_FORM_MOBILE}%;
   }
-`;
+`
 
 const OpenBtn = styled(animated(CommonButton))`
   position: relative;
@@ -52,15 +52,15 @@ const OpenBtn = styled(animated(CommonButton))`
   color: black;
   margin: 10px;
   line-height: 30px;
-`;
+`
 
-const Header = styled(CommonHeader)`
+const Header = styled(animated(CommonHeader))`
   padding: 12px;
   margin: 0 0 12px;
-  display: flex;
+  display: none;
   justify-content: space-between;
   border-bottom: solid 1px ${DESCRIPTION_FORM_BORDER};
-`;
+`
 
 const Heading = styled(CommonHeading)`
   flex: 1;
@@ -69,9 +69,9 @@ const Heading = styled(CommonHeading)`
   font-weight: 600;
   letter-spacing: 0.27px;
   color: #1f2d3d;
-`;
+`
 
-const Exit = styled(CommonExitSvg)``;
+const Exit = styled(CommonExitSvg)``
 
 const Item = styled(animated.div)`
   position: relative;
@@ -93,7 +93,7 @@ const SubmitBtn = styled(CommonButton)`
   &:focus {
     outline: none;
   }
-`;
+`
 
 const OpenModalBtn =  styled(animated.div)`
   justify-content: center;
@@ -107,4 +107,15 @@ const Text = styled.p`
   align-self:center;
 `
 
-export { SubmitBtn, Container, Wrapper, OpenBtn, Header, Heading, Exit, Item, OpenModalBtn, Text };
+export {
+  SubmitBtn,
+  Container,
+  Wrapper,
+  OpenBtn,
+  Header,
+  Heading,
+  Exit,
+  Item,
+  OpenModalBtn,
+  Text
+}

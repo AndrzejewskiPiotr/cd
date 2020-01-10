@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DescriptionForm/descriptionForm-styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DescriptionForm/descriptionForm-styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DescriptionForm/descriptionForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DescriptionForm/descriptionForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/header/header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +113,7 @@
       <workItem from="1576825382145" duration="10379000" />
       <workItem from="1577084770826" duration="1663000" />
       <workItem from="1577703381169" duration="700000" />
-      <workItem from="1578646036938" duration="1333000" />
+      <workItem from="1578646036938" duration="2711000" />
     </task>
     <task id="LOCAL-00001" summary="sdd">
       <created>1566454344259</created>
