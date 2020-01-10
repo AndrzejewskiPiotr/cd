@@ -95,4 +95,16 @@ const SubmitBtn = styled(CommonButton)`
   }
 `;
 
-export { SubmitBtn, Container, Wrapper, OpenBtn, Header, Heading, Exit, Item };
+const OpenModalBtn =  styled(animated.div)`
+  justify-content: center;
+  height: 100%;
+`
+
+const Text = styled.p`
+  margin:0;
+  padding:0;
+  text-align:center;
+  align-self:center;
+`
+
+export { SubmitBtn, Container, Wrapper, OpenBtn, Header, Heading, Exit, Item, OpenModalBtn, Text };

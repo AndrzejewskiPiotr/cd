@@ -9,7 +9,9 @@ import {
   Wrapper,
   OpenBtn,
   Header,
-  Heading
+  Heading,
+  OpenModalBtn,
+  Text
 } from './descriptionForm-styled';
 import { usePromise } from '../../hook/usePromise';
 import { API } from '../../api';
@@ -51,9 +53,10 @@ const createFormInitialValues = (describtion: any, isDescription: boolean) => ({
 export function DescriptionForm({ heading, id }: PAnimatedForm) {
   const api = new API();
   const url = `/repository/slides/${id}/description`;
-  const openBtnRef = useRef(null);
-  const containerRef = useRef(null);
-  const transRef = useRef(null);
+  const containerRef = useRef()
+  const openModalBtnRef = useRef()
+  const headerRef = useRef()
+  const fieldsRef = useRef()
   const [description, isError, isPending] = usePromise(api.get(url), []);
   const [open, set] = useState(false);
   const handleToggleModal = () => {
@@ -70,58 +73,52 @@ export function DescriptionForm({ heading, id }: PAnimatedForm) {
     return createFormInitialValues(description, isDescription);
   };
   // @ts-ignore
-  const { width, height, background, display, ...rest } = useSpring({
+  const { width, height, ...rest } = useSpring({
     // @ts-ignore
     ref: containerRef,
     config: config.stiff,
-    from: {
-      width: '10%',
-      heigh: '10%',
-      background: 'rgba(0, 0, 0, 0)',
-      display: 'none'
-    },
-    to: {
-      display: open ? 'flex' : 'none',
-      width: open ? `100%` : '10%',
-      height: open ? `100%` : '10%',
-      background: open ? 'white' : 'rgba(0, 0, 0, 0)'
-    }
-  });
-  // @ts-ignore
-  const { ...btn } = useSpring({
-    // @ts-ignore
-    ref: openBtnRef,
-    config: config.stiff,
-    from: {
-      opacity: 1,
-      display: 'block'
-    },
-    to: {
-      opacity: open ? 0 : 1,
-      display: open ? 'none' : 'block'
-    }
-  });
-  const transitions = useTransition(
+    from: { width: '9%', height: '5%', background: 'white' },
+    to: { width: open ? '100%' : '9%', height: open ? '80%' : '5%', background: open ? 'white' : 'white' }
+  })
+  const fieldsAnimation = useTransition(
     open ? formFields : [],
     (item: any) => item.key,
     {
       // @ts-ignore
-      ref: transRef,
-      unique: true,
+      ref: fieldsRef,
       trail: 1,
       from: { opacity: 0, transform: 'scale(0)' },
       enter: { opacity: 1, transform: 'scale(1)' },
-      leave: { opacity: 0, transform: 'scale(0)' }
+      leave: { opacity: 0, transform: 'scale(0)', display: open ? 'block' : 'none' }
     }
   );
   // @ts-ignore
-  useChain(
-    open
-      ? [openBtnRef, containerRef, transRef]
-      : [transRef, containerRef, openBtnRef],
-    [0, open ? 0.1 : 0.6, open ? 0.1 : 0.6]
-  );
-
+  const openBtnAnimation = useSpring({
+    // @ts-ignore
+    ref:openModalBtnRef,
+    config: config.stiff,
+    to: async (next: any, cancel: any) => {
+      await next({display: open ? 'none' : 'flex', opacity: open ? 0: 1 })
+    },
+    from: {opacity: 1}
+  })
+  // @ts-ignore
+  const headingAnimation = useSpring({
+    // @ts-ignore
+    ref:headerRef,
+    config: config.stiff,
+    to: async (next: any, cancel: any) => {
+      await next({display: open ? 'flex': 'none'})
+      await next({opacity: open ? 1: 0 })
+    },
+    from: {opacity: open ? 1:0,display: open ? 'flex': 'none'}
+  })
+  // @ts-ignore
+  useChain(open ?
+    [openModalBtnRef,containerRef,headerRef,fieldsRef]:
+    [fieldsRef,headerRef,containerRef,openModalBtnRef],
+    [0,0.3,0.4,0.7]
+  )
   return (
     <Wrapper>
       <OpenBtn
@@ -131,21 +128,27 @@ export function DescriptionForm({ heading, id }: PAnimatedForm) {
         text="Opis Medyczny"
       />
       <Container
-        style={{ ...rest, width, height, background, display }}
+        style={{ ...rest, width, height }}
         initialValues={handleInitialValues()}
         validationSchema={FormSchema}
         handleSubmit={handleSubmit}
         render={(formik: any) => (
           <>
-            <Header>
-              <Heading onClick={handleToggleModal} text={heading} />
-              <Exit onClick={handleToggleModal} />
+            <OpenModalBtn style={openBtnAnimation} onClick={handleToggleModal}>
+              <Text>
+                Opis Medyczny
+              </Text>
+            </OpenModalBtn>
+            <Header style={headingAnimation}>
+              <Heading text={heading}/>
+              <Exit onClick={handleToggleModal}/>
             </Header>
-            {transitions.map(({ item, key, animation }: any) => (
-              <Item key={key} style={animation}>
-                {createElement(item.category, item, formik)}
-              </Item>
-            ))}
+            {
+              fieldsAnimation.map(({ item, key, props }:any) => (
+                <Item key={key} style={props}>
+                  {createElement(item.category, item, formik)}
+                </Item>
+              ))}
           </>
         )}
       />
