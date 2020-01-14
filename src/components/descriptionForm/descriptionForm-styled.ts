@@ -108,7 +108,9 @@ const Text = styled.p`
 `;
 
 const MaterialSnackBar = styled(Snackbar)`
-  position: absolute;
+  && {
+    position: absolute;
+  }
 `;
 
 export {
