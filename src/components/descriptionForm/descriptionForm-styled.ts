@@ -1,5 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import { animated } from 'react-spring';
+import Snackbar from '@material-ui/core/Snackbar';
 
 import { CommonForm } from '../common/form';
 import { CommonHeader } from '../common/header';
@@ -10,14 +11,13 @@ import { CommonExitSvg } from '../common/exitSvg/exit-svg';
 import {
   SUBMIT_BTN_COLOR,
   SUBMIT_BTN_SHADOW,
-  FORM_BORDER_COLOR,
   NOTDESKTOP,
-  DESCRIPTION_FORM_BORDER } from '../../style';
+  DESCRIPTION_FORM_BORDER
+} from '../../style';
 
-
-const MAX_HEIGHT_FORM = 90 // %
-const MAX_WIDTH_FORM_DESKTOP = 600 // PX
-const MAX_WIDTH_FORM_MOBILE = 85 // %
+const MAX_HEIGHT_FORM = 90; // %
+const MAX_WIDTH_FORM_DESKTOP = 600; // PX
+const MAX_WIDTH_FORM_MOBILE = 85; // %
 
 const Wrapper = styled.div``;
 
@@ -40,7 +40,7 @@ const Container = styled(animated(CommonForm))`
   ${NOTDESKTOP} {
     max-width: ${MAX_WIDTH_FORM_MOBILE}%;
   }
-`
+`;
 
 const OpenBtn = styled(animated(CommonButton))`
   position: relative;
@@ -52,7 +52,7 @@ const OpenBtn = styled(animated(CommonButton))`
   color: black;
   margin: 10px;
   line-height: 30px;
-`
+`;
 
 const Header = styled(animated(CommonHeader))`
   padding: 12px;
@@ -60,7 +60,7 @@ const Header = styled(animated(CommonHeader))`
   display: none;
   justify-content: space-between;
   border-bottom: solid 1px ${DESCRIPTION_FORM_BORDER};
-`
+`;
 
 const Heading = styled(CommonHeading)`
   flex: 1;
@@ -69,9 +69,9 @@ const Heading = styled(CommonHeading)`
   font-weight: 600;
   letter-spacing: 0.27px;
   color: #1f2d3d;
-`
+`;
 
-const Exit = styled(CommonExitSvg)``
+const Exit = styled(CommonExitSvg)``;
 
 const Item = styled(animated.div)`
   position: relative;
@@ -93,19 +93,23 @@ const SubmitBtn = styled(CommonButton)`
   &:focus {
     outline: none;
   }
-`
+`;
 
-const OpenModalBtn =  styled(animated.div)`
+const OpenModalBtn = styled(animated.div)`
   justify-content: center;
   height: 100%;
-`
+`;
 
 const Text = styled.p`
-  margin:0;
-  padding:0;
-  text-align:center;
-  align-self:center;
-`
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  align-self: center;
+`;
+
+const MaterialSnackBar = styled(Snackbar)`
+  position: absolute;
+`;
 
 export {
   SubmitBtn,
@@ -117,5 +121,6 @@ export {
   Exit,
   Item,
   OpenModalBtn,
-  Text
-}
+  Text,
+  MaterialSnackBar
+};

@@ -38,7 +38,18 @@ export default {
     }),
     commonjs({
       namedExports: {
-        'node_modules/react-js/index.js': ['isValidElementType']
+        'node_modules/react/index.js': [
+          'cloneElement',
+          'createContext',
+          'Component',
+          'createElement'
+        ],
+        'node_modules/react-dom/index.js': ['render', 'hydrate'],
+        'node_modules/react-is/index.js': [
+          'isElement',
+          'isValidElementType',
+          'ForwardRef'
+        ]
       },
       include: [
         /node_modules\/prop-types/,

@@ -1,10 +1,10 @@
-import React, { ReactElement, ReactNode } from 'react';
+import React, { ReactElement, ReactNode, CSSProperties } from 'react';
 import { Element } from './header-styled';
 
 type PCommonHeader = {
   children: ReactNode | ReactNode[];
   className?: string;
-  style?: any
+  style?: CSSProperties;
 };
 
 const CommonHeader = ({ children, ...rest }: PCommonHeader): ReactElement => (
