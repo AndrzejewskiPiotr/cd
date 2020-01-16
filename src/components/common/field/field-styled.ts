@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ERROR_COLOR } from '../../../style';
+import { ERROR_COLOR, HEADING_COLOR, LABEL_TEXT_COLOR } from '../../../style';
 
 const Wrapper = styled.div`
   display: grid;
@@ -16,13 +16,13 @@ const Input = styled.input`
   box-sizing: border-box;
   font-size: 14px;
   letter-spacing: 0.17px;
-  color: #1f2d3d;
+  color: ${HEADING_COLOR};
 
   &:focus {
     outline: none;
   }
   &::placeholder {
-    color: #1f2d3d;
+    color: ${HEADING_COLOR};
   }
 `;
 
@@ -31,7 +31,7 @@ const Label = styled.label`
   font-size: 13px;
   letter-spacing: 0.24px;
   text-align: left;
-  color: #79818b;
+  color: ${LABEL_TEXT_COLOR};
   &:after {
     content: '*';
     color: ${ERROR_COLOR};

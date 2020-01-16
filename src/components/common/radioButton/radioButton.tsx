@@ -1,25 +1,13 @@
-import React, { ReactElement } from 'react';
-import { makeStyles, createStyles } from '@material-ui/core/styles';
+import React, { ReactElement, ChangeEvent } from 'react';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import { Label, Wrapper } from './radioButton-styled';
-import { ErrorMessage } from '../errorMessage';
 import { getIn } from 'formik';
 
-const useStyles = makeStyles(() =>
-  createStyles({
-    root: {
-      flexDirection: 'row',
-      colorPrimary: {
-        color: '#00406b'
-      },
-      '&$checked': {
-        color: '#00406b'
-      }
-    }
-  })
-);
+import { Label, Wrapper, useStyles } from './radioButton-styled';
+import { ErrorMessage } from '../errorMessage';
+import { RADIO_BTN_COLOR } from '../../../style';
+
 
 export function CommonRadioButtonGroup(props: any): ReactElement {
   const classes = useStyles();
@@ -33,7 +21,7 @@ export function CommonRadioButtonGroup(props: any): ReactElement {
     setFieldValue
   } = props;
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     setFieldValue(inputname, event.target.value);
   };
 
@@ -51,7 +39,7 @@ export function CommonRadioButtonGroup(props: any): ReactElement {
           value="ICD-O"
           control={
             <Radio
-              style={{ color: '#00406b' }}
+              style={{ color: `${RADIO_BTN_COLOR}` }}
               classes={classes}
               color="primary"
             />
@@ -62,7 +50,7 @@ export function CommonRadioButtonGroup(props: any): ReactElement {
           value="ICD-10"
           control={
             <Radio
-              style={{ color: '#00406b' }}
+              style={{ color: `${RADIO_BTN_COLOR}` }}
               classes={classes}
               color="primary"
             />

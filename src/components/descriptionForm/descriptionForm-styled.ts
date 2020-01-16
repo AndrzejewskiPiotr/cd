@@ -12,11 +12,11 @@ import {
   SUBMIT_BTN_COLOR,
   SUBMIT_BTN_SHADOW,
   NOTDESKTOP,
-  DESCRIPTION_FORM_BORDER
+  DESCRIPTION_FORM_BORDER,
+  FORM_BORDER_COLOR,
+  HEADING_COLOR
 } from '../../style';
 
-const MAX_HEIGHT_FORM = 90; // %
-const MAX_WIDTH_FORM_DESKTOP = 600; // PX
 const MAX_WIDTH_FORM_MOBILE = 85; // %
 
 const Wrapper = styled.div``;
@@ -34,24 +34,12 @@ const Container = styled(animated(CommonForm))`
   will-change: width, height;
   z-index: 401;
   border-radius: 8px;
-  border: solid 1px #979797;
+  border: solid 1px ${FORM_BORDER_COLOR};
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.05);
 
   ${NOTDESKTOP} {
     max-width: ${MAX_WIDTH_FORM_MOBILE}%;
   }
-`;
-
-const OpenBtn = styled(animated(CommonButton))`
-  position: relative;
-  cursor: pointer;
-  z-index: 99999999;
-  display: block;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  background-color: white;
-  color: black;
-  margin: 10px;
-  line-height: 30px;
 `;
 
 const Header = styled(animated(CommonHeader))`
@@ -68,7 +56,7 @@ const Heading = styled(CommonHeading)`
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.27px;
-  color: #1f2d3d;
+  color: ${HEADING_COLOR};
 `;
 
 const Exit = styled(CommonExitSvg)``;
@@ -108,16 +96,15 @@ const Text = styled.p`
 `;
 
 const MaterialSnackBar = styled(Snackbar)`
-  && {
+   && {
     position: absolute;
-  }
+   }
 `;
 
 export {
   SubmitBtn,
   Container,
   Wrapper,
-  OpenBtn,
   Header,
   Heading,
   Exit,

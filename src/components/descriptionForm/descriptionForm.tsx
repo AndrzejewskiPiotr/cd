@@ -42,11 +42,11 @@ const createDescription = (formValues: FormValues, id: string) => ({
   slide_id: id
 });
 
-const createFormInitialValues = (describtion: any, isDescription: boolean) => ({
+const createFormInitialValues = (description: any, isDescription: boolean) => ({
   classification: {
-    code: isDescription ? describtion.description.classification.code : '',
+    code: isDescription ? description.description.classification.code : '',
     standard: isDescription
-      ? describtion.description.classification.standard
+      ? description.description.classification.standard
       : ''
   }
 });
@@ -92,11 +92,10 @@ export function DescriptionForm({ heading, id }: PAnimatedForm) {
     try {
       await api.put(url, { body: updatedDescription });
       setUpdateResponse(RESPONSE.success);
-      setApiResponse(true);
     } catch (err) {
       setUpdateResponse(RESPONSE.error);
-      setApiResponse(true);
     }
+    setApiResponse(true);
   };
   const handleInitialValues = () => {
     const isDescription = description.length !== 0;
@@ -119,11 +118,10 @@ export function DescriptionForm({ heading, id }: PAnimatedForm) {
     // @ts-ignore
     ref: containerRef,
     config: config.stiff,
-    from: { width: '9%', height: '5%', background: 'white' },
+    from: { width: '9%', height: '5%' },
     to: {
       width: open ? '100%' : '9%',
       height: open ? '80%' : '5%',
-      background: open ? 'white' : 'white'
     }
   });
   const fieldsAnimation = useTransition(
@@ -148,7 +146,8 @@ export function DescriptionForm({ heading, id }: PAnimatedForm) {
     ref: openModalBtnRef,
     config: config.stiff,
     to: async (next: any) => {
-      await next({ display: open ? 'none' : 'flex', opacity: open ? 0 : 1 });
+      await next({display: open ? 'none' : 'flex'})
+      await next({ opacity: open ? 0: 1})
     },
     from: { opacity: 1 }
   });

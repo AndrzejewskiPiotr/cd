@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-const Element = styled.div``;
+const Element = styled.h1``;
 
 export { Element };

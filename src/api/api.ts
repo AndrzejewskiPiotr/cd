@@ -1,9 +1,6 @@
 interface Params {
-  az?: 'json' | 'text';
   body?: FormData | URLSearchParams | null | string;
   headers?: Array<Array<string>> | Headers | { [name: string]: string };
-  method?: string;
-  queries?: { [name: string]: string };
 }
 
 export class API {
