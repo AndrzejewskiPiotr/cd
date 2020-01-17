@@ -1,1 +1,0 @@
-export { CommonHeading } from './heading';

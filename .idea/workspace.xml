@@ -2,7 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32ecfd8c-d220-4446-9f4f-17641fbbb932" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/button/button-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/button/button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/button/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/errorMessage/error-message-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/errorMessage/error-message.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/errorMessage/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/exitSvg/exit-svg-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/exitSvg/exit-svg.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/field/field-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/field/field.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/field/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/form/form-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/form/form.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/form/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/header/header-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/header/header.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/header/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/heading/heading-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/heading/heading.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/heading/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/radioButton/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/radioButton/radioButton-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/radioButton/radioButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/descriptionForm/descriptionForm-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/descriptionForm/descriptionForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/descriptionForm/fields.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/descriptionForm/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hook/usePromise/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hook/usePromise/use-promise.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/typings.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/map.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewer/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewer/slideWorkBench-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewer/slideWorkBench.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.test.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +86,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -113,6 +163,8 @@
       <workItem from="1578646036938" duration="4012000" />
       <workItem from="1578895829024" duration="610000" />
       <workItem from="1578997191931" duration="2840000" />
+      <workItem from="1579161298216" duration="782000" />
+      <workItem from="1579263063278" duration="136000" />
     </task>
     <task id="LOCAL-00001" summary="sdd">
       <created>1566454344259</created>
@@ -133,6 +185,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="additionalRoots">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -157,22 +214,22 @@
       <screen x="2560" y="0" width="1680" height="1050" />
     </state>
     <state x="3070" y="216" width="649" height="616" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1575460272715" />
-    <state width="1652" height="262" key="GridCell.Tab.0.bottom" timestamp="1575986716570">
+    <state width="1652" height="262" key="GridCell.Tab.0.bottom" timestamp="1579263112461">
       <screen x="2560" y="0" width="1680" height="1050" />
     </state>
-    <state width="1652" height="262" key="GridCell.Tab.0.bottom/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1575986716570" />
-    <state width="1652" height="262" key="GridCell.Tab.0.center" timestamp="1575986716570">
+    <state width="1652" height="262" key="GridCell.Tab.0.bottom/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1579263112461" />
+    <state width="1652" height="262" key="GridCell.Tab.0.center" timestamp="1579263112461">
       <screen x="2560" y="0" width="1680" height="1050" />
     </state>
-    <state width="1652" height="262" key="GridCell.Tab.0.center/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1575986716570" />
-    <state width="1652" height="262" key="GridCell.Tab.0.left" timestamp="1575986716570">
+    <state width="1652" height="262" key="GridCell.Tab.0.center/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1579263112461" />
+    <state width="1652" height="262" key="GridCell.Tab.0.left" timestamp="1579263112460">
       <screen x="2560" y="0" width="1680" height="1050" />
     </state>
-    <state width="1652" height="262" key="GridCell.Tab.0.left/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1575986716570" />
-    <state width="1652" height="262" key="GridCell.Tab.0.right" timestamp="1575986716570">
+    <state width="1652" height="262" key="GridCell.Tab.0.left/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1579263112460" />
+    <state width="1652" height="262" key="GridCell.Tab.0.right" timestamp="1579263112461">
       <screen x="2560" y="0" width="1680" height="1050" />
     </state>
-    <state width="1652" height="262" key="GridCell.Tab.0.right/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1575986716570" />
+    <state width="1652" height="262" key="GridCell.Tab.0.right/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1579263112461" />
   </component>
   <component name="masterDetails">
     <states>

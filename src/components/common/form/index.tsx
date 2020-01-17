@@ -1,1 +1,0 @@
-export { CommonForm } from './form';

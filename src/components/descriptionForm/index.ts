@@ -1,1 +1,0 @@
-export { DescriptionForm } from './descriptionForm';
