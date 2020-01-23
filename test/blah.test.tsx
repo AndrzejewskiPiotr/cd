@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Thing } from '../src';
+import { SlideWorkBench } from '../src';
 
 describe('it', () => {
   it('renders without crashing', () => {

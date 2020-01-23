@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="32ecfd8c-d220-4446-9f4f-17641fbbb932" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hook/usePromise/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hook/usePromise/use-promise.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/map.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewer/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewer/slideWorkBench-styled.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewer/slideWorkBench.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +116,7 @@
       <workItem from="1579161298216" duration="782000" />
       <workItem from="1579263063278" duration="1190000" />
       <workItem from="1579500147667" duration="3883000" />
-      <workItem from="1579783312384" duration="260000" />
+      <workItem from="1579783312384" duration="1459000" />
     </task>
     <task id="LOCAL-00001" summary="sdd">
       <created>1566454344259</created>

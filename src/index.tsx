@@ -1,1 +1,6 @@
-export { SlideWorkBench } from './viewer'
+import { SlideWorkBench } from 'viewer';
+
+export {
+    SlideWorkBench
+}
+
