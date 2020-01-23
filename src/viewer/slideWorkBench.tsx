@@ -1,9 +1,11 @@
 import React, { useRef } from 'react';
+import { StylesProvider } from '@material-ui/styles';
 
 import CreateMap from '../utility/map';
 import { Container, Wrapper } from './slideWorkBench-styled';
-import { usePromise } from '../hook/usePromise/index';
+import { usePromise } from '../hook/usePromise';
 import { API } from '../api';
+import { DescriptionForm } from '../components/descriptionForm';
 
 type PSlideWorkBench = {
   name: string;
@@ -26,9 +28,12 @@ export function SlideWorkBench({ name, id, ...rest }: PSlideWorkBench) {
   }
 
   return (
+      <StylesProvider injectFirst>
       <Container>
         <Wrapper {...rest} ref={mapContainerRef}>
+          <DescriptionForm id={id} heading={name}/>
         </Wrapper>
       </Container>
+      </StylesProvider>
   );
 }

@@ -1,0 +1,36 @@
+//colors
+const MAP_CONTAINER_BACKGROUND = `#f1f3f4`;
+const FORM_BORDER_COLOR = `#979797`;
+const LABEL_TEXT_COLOR = `#79818b`;
+const RADIO_BTN_COLOR = `#00406b`;
+const HEADING_COLOR = `#1f2d3d`;
+const DESCRIPTION_FORM_BACKGROUND = `#fff`;
+const DESCRIPTION_FORM_BORDER = `#d3dce6`;
+const SUBMIT_BTN_COLOR = `#13ce66`;
+const SUBMIT_BTN_SHADOW = `rgba(19, 206, 102, 0.3)`;
+const ERROR_COLOR = `#ff4949`;
+
+// media
+const MOBILE_MAX_WIDTH = 425;
+const TABLET_MIN_WIDTH = 426;
+const TABLET_MAX_WIDTH = 768;
+
+const MOBILE = `@media (max-width: ${MOBILE_MAX_WIDTH}px)`;
+const TABLET = `@media (min-width: ${TABLET_MIN_WIDTH}px) and (max-width: ${TABLET_MAX_WIDTH}px)`;
+const NOTDESKTOP = `@media (max-width: ${TABLET_MAX_WIDTH}px)`;
+
+export {
+  MAP_CONTAINER_BACKGROUND,
+  DESCRIPTION_FORM_BACKGROUND,
+  DESCRIPTION_FORM_BORDER,
+  ERROR_COLOR,
+  FORM_BORDER_COLOR,
+  SUBMIT_BTN_COLOR,
+  SUBMIT_BTN_SHADOW,
+  MOBILE,
+  TABLET,
+  NOTDESKTOP,
+  LABEL_TEXT_COLOR,
+  RADIO_BTN_COLOR,
+  HEADING_COLOR
+};

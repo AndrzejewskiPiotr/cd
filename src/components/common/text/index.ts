@@ -1,0 +1,1 @@
+export { CommonText } from './text'
