@@ -7,7 +7,7 @@ import 'leaflet-easybutton';
 import 'leaflet-draw';
 import 'leaflet-draw/dist/leaflet.draw.css';
 
-function CreateMap(url: string): void {
+export function CreateMap(url: string): void {
     const container = L.DomUtil.get('map-container') as HTMLElement | any;
     if (container != null) {
         container._leaflet_id = null;
@@ -34,4 +34,4 @@ function CreateMap(url: string): void {
     tileLayer.addTo(map);
 }
 
-export default CreateMap;
+

@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { StylesProvider } from '@material-ui/styles';
 
-import CreateMap from '../utility/map';
+import { CreateMap } from '../utility/map';
 import { Container, Wrapper } from './slideWorkBench-styled';
 import { usePromise } from '../hook/usePromise/index';
 import { API } from '../api';
