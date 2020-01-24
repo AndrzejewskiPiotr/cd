@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="32ecfd8c-d220-4446-9f4f-17641fbbb932" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewer/slideWorkBench.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewer/slideWorkBench.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hook/usePromise/use-promise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hook/usePromise/use-promise.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +123,7 @@
       <workItem from="1579263063278" duration="1190000" />
       <workItem from="1579500147667" duration="3883000" />
       <workItem from="1579783312384" duration="3245000" />
-      <workItem from="1579848643833" duration="5162000" />
+      <workItem from="1579848643833" duration="11706000" />
     </task>
     <task id="LOCAL-00001" summary="sdd">
       <created>1566454344259</created>
@@ -171,22 +173,22 @@
       <screen x="2560" y="0" width="1680" height="1050" />
     </state>
     <state x="3070" y="216" width="649" height="616" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1575460272715" />
-    <state width="1652" height="262" key="GridCell.Tab.0.bottom" timestamp="1579266880663">
+    <state width="1652" height="262" key="GridCell.Tab.0.bottom" timestamp="1579858368867">
       <screen x="2560" y="0" width="1680" height="1050" />
     </state>
-    <state width="1652" height="262" key="GridCell.Tab.0.bottom/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1579266880663" />
-    <state width="1652" height="262" key="GridCell.Tab.0.center" timestamp="1579266880663">
+    <state width="1652" height="262" key="GridCell.Tab.0.bottom/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1579858368867" />
+    <state width="1652" height="262" key="GridCell.Tab.0.center" timestamp="1579858368867">
       <screen x="2560" y="0" width="1680" height="1050" />
     </state>
-    <state width="1652" height="262" key="GridCell.Tab.0.center/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1579266880663" />
-    <state width="1652" height="262" key="GridCell.Tab.0.left" timestamp="1579266880663">
+    <state width="1652" height="262" key="GridCell.Tab.0.center/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1579858368867" />
+    <state width="1652" height="262" key="GridCell.Tab.0.left" timestamp="1579858368866">
       <screen x="2560" y="0" width="1680" height="1050" />
     </state>
-    <state width="1652" height="262" key="GridCell.Tab.0.left/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1579266880663" />
-    <state width="1652" height="262" key="GridCell.Tab.0.right" timestamp="1579266880663">
+    <state width="1652" height="262" key="GridCell.Tab.0.left/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1579858368866" />
+    <state width="1652" height="262" key="GridCell.Tab.0.right" timestamp="1579858368867">
       <screen x="2560" y="0" width="1680" height="1050" />
     </state>
-    <state width="1652" height="262" key="GridCell.Tab.0.right/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1579266880663" />
+    <state width="1652" height="262" key="GridCell.Tab.0.right/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1579858368867" />
   </component>
   <component name="masterDetails">
     <states>

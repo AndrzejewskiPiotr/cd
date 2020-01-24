@@ -15,7 +15,7 @@ import {
     MaterialAlert,
     MaterialSnackBar
 } from './description-form-styled';
-import { usePromise } from 'hook/usePromise';
+import { usePromise } from 'hook';
 import { DescriptionFormService, FormValues } from './description-form-service';
 import { createElement, formFields } from './fields';
 
