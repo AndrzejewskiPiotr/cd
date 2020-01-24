@@ -43,7 +43,8 @@ const formFields: FormField[] = [
   {
     category: 'button',
     key: 'btn.submit',
-    text: 'zapisz'
+    text: 'zapisz',
+    type: 'submit'
   }
 ];
 
