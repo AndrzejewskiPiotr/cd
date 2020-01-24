@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="32ecfd8c-d220-4446-9f4f-17641fbbb932" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/descriptionForm/description-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/descriptionForm/description-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewer/slideWorkBench.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewer/slideWorkBench.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +123,7 @@
       <workItem from="1579263063278" duration="1190000" />
       <workItem from="1579500147667" duration="3883000" />
       <workItem from="1579783312384" duration="3245000" />
-      <workItem from="1579848643833" duration="14936000" />
+      <workItem from="1579848643833" duration="15585000" />
     </task>
     <task id="LOCAL-00001" summary="sdd">
       <created>1566454344259</created>
