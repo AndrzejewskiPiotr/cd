@@ -23,9 +23,7 @@ const Label = styled.label`
   }
 `;
 
-const MaterialRadio = styled(Radio)`
- color: ${RADIO_BTN_COLOR}
-`
+const MaterialRadio = styled(Radio)``
 
 const MaterialRadioGroup = styled(RadioGroup)``
 
