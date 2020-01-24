@@ -3,7 +3,8 @@ import { StylesProvider } from '@material-ui/styles';
 
 import { CreateMap } from '../utility/map';
 import { Container, Wrapper } from './slideWorkBench-styled';
-import { usePromise } from '../hook';
+const usePromise = require("../hook/index");
+
 import { API } from '../api';
 import { DescriptionForm } from '../components/descriptionForm/index';
 

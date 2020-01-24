@@ -4,8 +4,8 @@
     <list default="true" id="32ecfd8c-d220-4446-9f4f-17641fbbb932" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hook/usePromise/use-promise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hook/usePromise/use-promise.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/descriptionForm/description-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/descriptionForm/description-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewer/slideWorkBench.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewer/slideWorkBench.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +45,9 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/hook" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
@@ -123,7 +126,7 @@
       <workItem from="1579263063278" duration="1190000" />
       <workItem from="1579500147667" duration="3883000" />
       <workItem from="1579783312384" duration="3245000" />
-      <workItem from="1579848643833" duration="11706000" />
+      <workItem from="1579848643833" duration="13630000" />
     </task>
     <task id="LOCAL-00001" summary="sdd">
       <created>1566454344259</created>
@@ -144,11 +147,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-    <option name="additionalRoots">
-      <list>
-        <option value="$PROJECT_DIR$/node_modules" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
