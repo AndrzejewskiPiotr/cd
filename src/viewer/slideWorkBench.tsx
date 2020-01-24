@@ -3,9 +3,9 @@ import { StylesProvider } from '@material-ui/styles';
 
 import CreateMap from '../utility/map';
 import { Container, Wrapper } from './slideWorkBench-styled';
-import { usePromise } from 'hook/usePromise';
+import { usePromise } from '../hook/usePromise';
 import { API } from '../api';
-import { DescriptionForm } from 'components/descriptionForm';
+import { DescriptionForm } from '../components/descriptionForm';
 
 type PSlideWorkBench = {
   name: string;
