@@ -36,6 +36,7 @@ export function CommonRadioButtonGroup(props: any): ReactElement {
                       | 'secondary'
                       | 'default'}) =>
               <MaterialFormControlLabel
+                  key={value.toString()}
                   value={value}
                   control={
                       <MaterialRadio
