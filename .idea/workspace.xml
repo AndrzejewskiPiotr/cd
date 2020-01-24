@@ -126,7 +126,7 @@
       <workItem from="1579263063278" duration="1190000" />
       <workItem from="1579500147667" duration="3883000" />
       <workItem from="1579783312384" duration="3245000" />
-      <workItem from="1579848643833" duration="13630000" />
+      <workItem from="1579848643833" duration="14936000" />
     </task>
     <task id="LOCAL-00001" summary="sdd">
       <created>1566454344259</created>
@@ -147,6 +147,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="additionalRoots">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

@@ -3,10 +3,10 @@ import { StylesProvider } from '@material-ui/styles';
 
 import { CreateMap } from '../utility/map';
 import { Container, Wrapper } from './slideWorkBench-styled';
-const usePromise = require("../hook/index");
+import { usePromise } from "../hook";
 
 import { API } from '../api';
-import { DescriptionForm } from '../components/descriptionForm/index';
+import { DescriptionForm } from '../components/descriptionForm';
 
 type PSlideWorkBench = {
   name: string;
