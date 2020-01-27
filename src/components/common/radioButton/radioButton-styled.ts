@@ -33,7 +33,7 @@ const useStyles = makeStyles(() =>
   createStyles({
     root: {
       flexDirection: 'row',
-      '&checked': {
+      '&$checked': {
         color: `${RADIO_BTN_COLOR}`
       }
     }
