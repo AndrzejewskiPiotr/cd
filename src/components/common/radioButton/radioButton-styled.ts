@@ -24,7 +24,9 @@ const Label = styled.label`
 `;
 
 const MaterialRadio = styled(Radio)`
-  color: ${RADIO_BTN_COLOR};
+  &&:checked {
+    color: ${RADIO_BTN_COLOR};
+  }
 `
 
 const MaterialRadioGroup = styled(RadioGroup)``
