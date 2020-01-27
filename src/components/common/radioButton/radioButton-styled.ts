@@ -23,7 +23,9 @@ const Label = styled.label`
   }
 `;
 
-const MaterialRadio = styled(Radio)``
+const MaterialRadio = styled(Radio)`
+  color: ${RADIO_BTN_COLOR};
+`
 
 const MaterialRadioGroup = styled(RadioGroup)``
 
@@ -34,7 +36,6 @@ const useStyles = makeStyles(() =>
     root: {
       flexDirection: 'row',
       '&$checked': {
-        color: `${RADIO_BTN_COLOR}`
       }
     }
   })
