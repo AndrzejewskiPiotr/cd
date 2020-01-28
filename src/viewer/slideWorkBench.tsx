@@ -2,19 +2,28 @@ import React, { useRef } from 'react';
 import { StylesProvider } from '@material-ui/styles';
 
 import { CreateMap } from '../utility/map';
-import { Container, Wrapper } from './slideWorkBench-styled';
-import { usePromise } from "../hook";
+import {
+  Container,
+  Wrapper,
+  MedicalDescription
+} from './slideWorkBench-styled';
+import { usePromise } from '../hook';
 
 import { API } from '../api';
-import { DescriptionForm } from '../components/descriptionForm';
 
 type PSlideWorkBench = {
   name: string;
   id: string;
+  editable: boolean;
   className?: string;
 };
 
-export function SlideWorkBench({ name, id, ...rest }: PSlideWorkBench) {
+export function SlideWorkBench({
+  editable,
+  name,
+  id,
+  ...rest
+}: PSlideWorkBench) {
   const url = `/image/iiif/${id}/info.json`;
   const api = new API();
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
@@ -22,7 +31,7 @@ export function SlideWorkBench({ name, id, ...rest }: PSlideWorkBench) {
   const { current: isContainerMounted } = mapContainerRef;
 
   if (data && isContainerMounted) {
-    CreateMap(`${url}`);
+    CreateMap(url);
   }
 
   if (isError) {
@@ -30,12 +39,12 @@ export function SlideWorkBench({ name, id, ...rest }: PSlideWorkBench) {
   }
 
   return (
-      <StylesProvider injectFirst>
+    <StylesProvider injectFirst>
       <Container>
         <Wrapper {...rest} ref={mapContainerRef}>
-          <DescriptionForm id={id} heading={name}/>
+          <MedicalDescription id={id} heading={name} editable={editable} />
         </Wrapper>
       </Container>
-      </StylesProvider>
+    </StylesProvider>
   );
 }

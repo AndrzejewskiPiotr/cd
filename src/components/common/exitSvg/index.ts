@@ -1,1 +1,1 @@
-export { CommonExitSvg } from './exit-svg'
+export { CommonExitSvg } from './exit-svg';

@@ -1,1 +1,1 @@
-export { DescriptionForm } from './description-form'
+export { DescriptionForm } from './description-form';

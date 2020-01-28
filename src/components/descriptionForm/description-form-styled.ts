@@ -9,12 +9,12 @@ import { CommonExitSvg } from '../common/exitSvg';
 import { CommonAlert } from '../common/alert';
 
 import {
-    SUBMIT_BTN_COLOR,
-    SUBMIT_BTN_SHADOW,
-    NOTDESKTOP,
-    DESCRIPTION_FORM_BORDER,
-    FORM_BORDER_COLOR,
-    HEADING_COLOR
+  SUBMIT_BTN_COLOR,
+  SUBMIT_BTN_SHADOW,
+  NOTDESKTOP,
+  DESCRIPTION_FORM_BORDER,
+  FORM_BORDER_COLOR,
+  HEADING_COLOR
 } from '../../style';
 
 const MAX_WIDTH_FORM_MOBILE = 85; // %
@@ -96,25 +96,23 @@ const Text = styled(CommonText)`
 `;
 
 const MaterialSnackBar = styled(Snackbar)`
-   && {
+  && {
     position: absolute;
-   }
+  }
 `;
 
-const MaterialAlert = styled(CommonAlert)`
-
-`
+const MaterialAlert = styled(CommonAlert)``;
 
 export {
-    SubmitBtn,
-    Container,
-    Wrapper,
-    Header,
-    Heading,
-    Exit,
-    Item,
-    OpenModalBtn,
-    Text,
-    MaterialSnackBar,
-    MaterialAlert
+  SubmitBtn,
+  Container,
+  Wrapper,
+  Header,
+  Heading,
+  Exit,
+  Item,
+  OpenModalBtn,
+  Text,
+  MaterialSnackBar,
+  MaterialAlert
 };

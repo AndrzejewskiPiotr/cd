@@ -1,6 +1,3 @@
 import { SlideWorkBench } from './viewer';
 
-export {
-    SlideWorkBench
-}
-
+export { SlideWorkBench };

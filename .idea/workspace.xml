@@ -2,7 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32ecfd8c-d220-4446-9f4f-17641fbbb932" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/eslintPlugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/alert/alert-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/alert/alert.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/alert/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/button/button-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/button/button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/button/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/errorMessage/error-message-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/errorMessage/error-message.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/errorMessage/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/exitSvg/exit-svg-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/exitSvg/exit-svg.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/exitSvg/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/field/field-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/field/field.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/field/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/heading/heading-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/heading/heading.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/heading/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/radioButton/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/radioButton/radioButton-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/radioButton/radioButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/text/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/text/text-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/text/text.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/descriptionForm/description-form-service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/descriptionForm/description-form-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/descriptionForm/description-form.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/descriptionForm/fields.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/descriptionForm/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hook/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hook/use-promise.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/map.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewer/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewer/slideWorkBench-styled.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewer/slideWorkBench.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/blah.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsdx.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,24 +82,27 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="eu.ydp.idea.ts.spec.generator.settings.spec.template" value="import {$ClassName$} from '$TestsRelativePath$../src/$classRelativePath$/$ClassName$';&#10;&#10;describe('$ClassName$', () =&gt; {&#10;  let $ObjName$:$ClassName$;&#10;&#10;  beforeEach(() =&gt; {&#10;    $ObjName$ = new $ClassName$();&#10;  });&#10;&#10;  describe('', () =&gt; {&#10;    it('', () =&gt; {&#10;      // given&#10;&#10;      // when&#10;&#10;      // then&#10;    });&#10;  });&#10;});&#10;" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="settings.editor.selected.configurable" value="com.eslint.settings.ESLintSettingsPage" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/hook" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/form" />
       <recent name="$PROJECT_DIR$/src/form/common" />
       <recent name="$PROJECT_DIR$/.." />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/hook" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -124,7 +176,9 @@
       <workItem from="1579500147667" duration="3883000" />
       <workItem from="1579783312384" duration="3245000" />
       <workItem from="1579848643833" duration="18994000" />
-      <workItem from="1580107807367" duration="5004000" />
+      <workItem from="1580107807367" duration="6906000" />
+      <workItem from="1580118738841" duration="3328000" />
+      <workItem from="1580192956875" duration="648000" />
     </task>
     <task id="LOCAL-00001" summary="sdd">
       <created>1566454344259</created>
@@ -145,11 +199,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-    <option name="additionalRoots">
-      <list>
-        <option value="$PROJECT_DIR$/node_modules" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -194,6 +243,10 @@
     </state>
     <state width="1652" height="262" key="GridCell.Tab.0.right/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1579858368867" />
     <state width="1652" height="262" key="GridCell.Tab.0.right/67.27.2493.1413/2560.0.1680.1050@67.27.2493.1413" timestamp="1579873696538" />
+    <state x="2803" y="71" key="SettingsEditor" timestamp="1580118676699">
+      <screen x="2560" y="0" width="1680" height="1050" />
+    </state>
+    <state x="2803" y="71" key="SettingsEditor/67.27.2493.1413/2560.0.1680.1050@2560.0.1680.1050" timestamp="1580118676699" />
   </component>
   <component name="masterDetails">
     <states>

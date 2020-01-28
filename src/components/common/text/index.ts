@@ -1,1 +1,1 @@
-export { CommonText } from './text'
+export { CommonText } from './text';

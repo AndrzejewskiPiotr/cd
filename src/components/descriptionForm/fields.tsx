@@ -4,14 +4,32 @@ import { CommonRadioButtonGroup } from '../common/radioButton';
 import { CommonField } from '../common/field';
 import { SubmitBtn } from './description-form-styled';
 
-
-type ButtonField = { category: 'button'; key: string; type?:string; text:string }
-type SelectField = { category: 'select'; key: string, label: string, name: string, options: {value:string,label:string, color?: 'primary'
-    | 'secondary'
-    | 'default' }[] }
-type InputField = { category: 'input'; type:string; key: string, label: string,name: string, placeholder: string }
-type FormField = ( ButtonField | InputField | SelectField );
-
+type ButtonField = {
+  category: 'button';
+  key: string;
+  type?: string;
+  text: string;
+};
+type SelectField = {
+  category: 'select';
+  key: string;
+  label: string;
+  name: string;
+  options: {
+    value: string;
+    label: string;
+    color?: 'primary' | 'secondary' | 'default';
+  }[];
+};
+type InputField = {
+  category: 'input';
+  type: string;
+  key: string;
+  label: string;
+  name: string;
+  placeholder: string;
+};
+type FormField = ButtonField | InputField | SelectField;
 
 const formFields: FormField[] = [
   {
@@ -19,7 +37,7 @@ const formFields: FormField[] = [
     key: 'classification.standard',
     label: 'Standard choroby',
     name: 'classification.standard',
-    options:[
+    options: [
       {
         value: 'ICD-O',
         label: 'ICD-O',
@@ -53,15 +71,9 @@ function createElement(category: string, data: any): any {
     case 'button':
       return <SubmitBtn key={data.key} {...data} />;
     case 'input':
-      return (
-        <CommonField
-          {...data}
-        />
-      );
+      return <CommonField {...data} />;
     case 'select':
-      return (
-        <CommonRadioButtonGroup key={data.key} {...data}/>
-      );
+      return <CommonRadioButtonGroup key={data.key} {...data} />;
   }
 }
 

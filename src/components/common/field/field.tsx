@@ -8,11 +8,10 @@ export function CommonField({ label, ...props }: any): ReactElement {
   const [field, meta] = useField(props);
   const { error, touched } = meta;
   return (
-      <Wrapper>
-        <Label>{label}</Label>
-        <Input {...field} {...props} />
-        <ErrorMessage error={error} touched={touched}/>
-      </Wrapper>
+    <Wrapper>
+      <Label>{label}</Label>
+      <Input {...field} {...props} />
+      <ErrorMessage error={error} touched={touched} />
+    </Wrapper>
   );
 }
-;

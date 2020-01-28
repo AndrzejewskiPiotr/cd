@@ -2,23 +2,23 @@ import React, { ReactElement, ChangeEvent } from 'react';
 import { useField } from 'formik';
 
 import {
-    Label,
-    Wrapper,
-    useStyles,
-    MaterialRadio,
-    MaterialFormControlLabel,
-    MaterialRadioGroup  } from './radioButton-styled';
+  Label,
+  Wrapper,
+  useStyles,
+  MaterialRadio,
+  MaterialFormControlLabel,
+  MaterialRadioGroup
+} from './radioButton-styled';
 import { ErrorMessage } from '../errorMessage';
-
 
 export function CommonRadioButtonGroup(props: any): ReactElement {
   const classes = useStyles();
-  const [{value}, {error, touched}, {setValue}] = useField(props);
+  const [{ value }, { error, touched }, { setValue }] = useField(props);
   const { name, label, options } = props;
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-      const value = event.target.value
-      setValue(value);
+    const value = event.target.value;
+    setValue(value);
   };
 
   return (
@@ -31,27 +31,26 @@ export function CommonRadioButtonGroup(props: any): ReactElement {
         value={value}
         onChange={handleChange}
       >
-          {
-              options.map( ({value,label,...rest}:{value:string,label:string, color:'primary'
-                      | 'secondary'
-                      | 'default'}) =>
-              <MaterialFormControlLabel
-                  key={value.toString()}
-                  value={value}
-                  control={
-                      <MaterialRadio
-                          classes={classes}
-                          {...rest}
-                      />
-                  }
-                  label={label}
-              />)
-          }
+        {options.map(
+          ({
+            value,
+            label,
+            ...rest
+          }: {
+            value: string;
+            label: string;
+            color: 'primary' | 'secondary' | 'default';
+          }) => (
+            <MaterialFormControlLabel
+              key={value.toString()}
+              value={value}
+              control={<MaterialRadio classes={classes} {...rest} />}
+              label={label}
+            />
+          )
+        )}
       </MaterialRadioGroup>
-      <ErrorMessage
-        touched={touched}
-        error={error}
-      />
+      <ErrorMessage touched={touched} error={error} />
     </Wrapper>
   );
 }

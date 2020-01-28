@@ -25,21 +25,26 @@ const Label = styled.label`
 
 const MaterialRadio = styled(Radio)`
   color: ${RADIO_BTN_COLOR};
-`
+`;
 
-const MaterialRadioGroup = styled(RadioGroup)``
+const MaterialRadioGroup = styled(RadioGroup)``;
 
-const MaterialFormControlLabel = styled(FormControlLabel)``
+const MaterialFormControlLabel = styled(FormControlLabel)``;
 
 const useStyles = makeStyles(() =>
   createStyles({
     root: {
       flexDirection: 'row',
-      '&$checked': {
-      }
+      '&$checked': {}
     }
   })
 );
 
-
-export { Wrapper, Label, useStyles, MaterialRadio, MaterialFormControlLabel, MaterialRadioGroup };
+export {
+  Wrapper,
+  Label,
+  useStyles,
+  MaterialRadio,
+  MaterialFormControlLabel,
+  MaterialRadioGroup
+};

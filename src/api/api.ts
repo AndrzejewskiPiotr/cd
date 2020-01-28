@@ -1,6 +1,7 @@
 interface Params {
   body?: FormData | URLSearchParams | null | string;
   headers?: Array<Array<string>> | Headers | { [name: string]: string };
+  credentials?: 'omit' | 'same-origin' | 'include';
 }
 
 export class API {
