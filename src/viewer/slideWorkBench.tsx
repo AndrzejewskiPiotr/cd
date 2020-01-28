@@ -3,24 +3,28 @@ import { StylesProvider } from '@material-ui/styles';
 
 import { CreateMap } from '../utility/map';
 import { Container, Wrapper } from './slideWorkBench-styled';
-import { usePromise } from '../hook/';
+import { usePromise } from '../hook/usePromise';
 import { API } from '../api';
 import { DescriptionForm } from '../components/descriptionForm';
 
 type PSlideWorkBench = {
+  editable: boolean;
   name: string;
   id: string;
   className?: string;
 };
-export function SlideWorkBench({ name, id, ...rest }: PSlideWorkBench) {
+export function SlideWorkBench({ editable:boolean, name, id, ...rest }: PSlideWorkBench) {
   const url = `/image/iiif/${id}/info.json`;
   const api = new API();
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
   const [data, isError] = usePromise(api.get(`${url}`), []);
   const { current: isContainerMounted } = mapContainerRef;
 
+  const shouldRenderDescriptionForm = () => {
+    return editable ? <DescriptionForm id={id} heading={name}/> : null
+  }
+
   if (data && isContainerMounted) {
-    console.log(data,isContainerMounted)
     CreateMap(`${url}`);
   }
 
@@ -32,7 +36,7 @@ export function SlideWorkBench({ name, id, ...rest }: PSlideWorkBench) {
       <StylesProvider injectFirst>
         <Container>
           <Wrapper {...rest} ref={mapContainerRef}>
-            <DescriptionForm id={id} heading={name}/>
+            {shouldRenderDescriptionForm()}
           </Wrapper>
         </Container>
       </StylesProvider>

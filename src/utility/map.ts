@@ -11,7 +11,6 @@ export function CreateMap(url: string): void {
   const container = L.DomUtil.get('map-container') as HTMLElement | any;
   if (container != null) {
     container._leaflet_id = null;
-    console.log(container)
   }
   const map = L.map('map-container', {
     crs: L.CRS.Simple,
