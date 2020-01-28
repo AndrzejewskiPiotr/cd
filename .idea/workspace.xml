@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="32ecfd8c-d220-4446-9f4f-17641fbbb932" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewer/slideWorkBench-styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewer/slideWorkBench-styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewer/slideWorkBench.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewer/slideWorkBench.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +131,7 @@
       <workItem from="1580118738841" duration="3328000" />
       <workItem from="1580192956875" duration="4030000" />
       <workItem from="1580200504905" duration="1885000" />
-      <workItem from="1580202406270" duration="434000" />
+      <workItem from="1580202406270" duration="1242000" />
     </task>
     <task id="LOCAL-00001" summary="sdd">
       <created>1566454344259</created>
