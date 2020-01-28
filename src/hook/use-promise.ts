@@ -30,7 +30,7 @@ export function usePromise<T>(
     return () => {
       isSubscribed = false;
     };
-  }, [defaultValue, promiseOrFunction]);
+  }, []);
 
   const { value, error, isPending } = state;
   return [value, error, isPending];
