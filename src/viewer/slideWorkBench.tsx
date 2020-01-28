@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import { StylesProvider } from '@material-ui/styles';
 
 import { CreateMap } from '../utility/map';
 import { Container, Wrapper } from './slideWorkBench-styled';
