@@ -13,7 +13,7 @@ type PSlideWorkBench = {
   id: string;
   className?: string;
 };
-export function SlideWorkBench({ editable:boolean, name, id, ...rest }: PSlideWorkBench) {
+export function SlideWorkBench({name, id, editable, ...rest }: PSlideWorkBench) {
   const url = `/image/iiif/${id}/info.json`;
   const api = new API();
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
