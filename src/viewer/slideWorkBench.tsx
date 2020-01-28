@@ -20,6 +20,7 @@ export function SlideWorkBench({ name, id, ...rest }: PSlideWorkBench) {
   const { current: isContainerMounted } = mapContainerRef;
 
   if (data && isContainerMounted) {
+    console.log(data,isContainerMounted)
     CreateMap(`${url}`);
   }
 
