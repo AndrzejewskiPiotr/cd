@@ -31,6 +31,7 @@ export function SlideWorkBench({
   const { current: isContainerMounted } = mapContainerRef;
 
   if (data && isContainerMounted) {
+    console.log('asdas')
     CreateMap(url);
   }
 

@@ -8,6 +8,7 @@ const Wrapper = styled.div.attrs({
 })``;
 
 const MedicalDescription = styled(DescriptionForm)<{ editable: boolean}>`
+  display: ${props => (props.editable ? 'flex' : 'none')};
 `;
 
 export { Container, Wrapper, MedicalDescription };
