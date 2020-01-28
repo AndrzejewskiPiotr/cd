@@ -33,12 +33,10 @@ export function SlideWorkBench({name, id, editable, ...rest }: PSlideWorkBench) 
   }
 
   return (
-      <StylesProvider injectFirst>
         <Container>
           <Wrapper {...rest} ref={mapContainerRef}>
             {shouldRenderDescriptionForm()}
           </Wrapper>
         </Container>
-      </StylesProvider>
   );
 }
